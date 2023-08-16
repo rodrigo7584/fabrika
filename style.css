@@ -1,0 +1,151 @@
+/*
+IMPORTS CSS
+*/
+@import url('./styles/reset.css');
+@import url('./styles/header.css');
+@import url('./styles/footer.css');
+/*
+END IMPORTS CSS
+*/
+/* 
+CSS VARIABLES 
+*/
+:root {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+
+  --white: #ffffff;
+  --gray:#f6f9fd;
+  --black: #000000;
+  --blue-300: #001741;
+  --blue-100: #586cb5;
+  --blue-200: #313243;
+  --orange: #f5a33d;
+
+  --pop: 'Poppins';
+  --ral: 'Raleway';
+
+  --font-light:300;
+  --font-semi-bold: 600;
+  --font-bold: 700;
+}
+/*
+END CSS VARIABLES
+*/
+*{
+  box-sizing: border-box;
+}
+body {
+  position: relative;
+  font-family: var(--pop);
+  color: var(--white);
+}
+a{
+  color: var(--white);
+  font-family: var(--pop);
+  font-weight: var(--font-bold);
+  font-size: 1.3rem;
+}
+a:hover {
+  filter: brightness(0.9);
+  transform: scale(0.98);
+}
+.container {
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+.container-fluid{
+  width: 100%;
+}
+.row {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  box-sizing: border-box;
+}
+.btn{
+  border-radius: 5rem;
+  padding: 0.5rem 2rem;
+  color: var(--white);
+  text-align: center;
+  font-size: 1.3rem;
+}
+.btn-orange{
+  background: var(--orange);
+}
+.trasition-before{
+  position: relative;
+}
+.trasition-before::before{
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 5rem;
+  z-index: 5;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: bottom;
+  top: -4.9rem;
+  left: 0;
+}
+.transition-blue::before {
+  background-image: url('./img/transition-3.png');
+}
+.swiper-hero-index {
+  width: 100%;
+}
+.swiper-hero-index .swiper-slide{
+  padding-top: 8.2rem;
+  background-color: #586cb5;
+}
+.swiper-hero-index .swiper-slide .content{
+
+}
+
+
+@media (max-width: 1400px) {
+  .container {
+    max-width: 1200px;
+  }
+}
+@media (max-width: 1200px) {
+  .container {
+    max-width: 992px;
+  }
+ }
+@media (max-width: 992px) {
+  .container {
+    max-width: 768px;
+  }
+ }
+@media (max-width: 768px) {
+  .container {
+    max-width: 576px;
+  }
+  .trasition-before::before {
+    background-size: contain;
+  }
+}
+@media (max-width: 576px) {
+  .container {
+    max-width: 400px;
+  }
+}
+/* 
+@media (max-width: 1400px) {
+
+}
+@media (max-width: 1200px) {
+
+ }
+@media (max-width: 992px) {
+
+ }
+@media (max-width: 768px) {
+
+}
+@media (max-width: 576px) {
+
+}
+@media (max-width: 400px) {
+} */
