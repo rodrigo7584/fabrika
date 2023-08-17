@@ -6,6 +6,10 @@ header.menu {
   background: transparent;
   padding: 1.5rem 0;
   z-index: 10;
+  transition: 0.2s ease-in-out;
+}
+header.menu.scrolled{
+  background: var(--blue-300);
 }
 header.menu .row {
   display: flex;

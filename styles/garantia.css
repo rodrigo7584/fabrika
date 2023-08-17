@@ -1,0 +1,43 @@
+.garantia{
+  position: relative;
+  padding: 4rem 0 7rem 0;
+  background-image: url('./img/line.png');
+  background-repeat: no-repeat;
+  background-position: right center;
+  background-size: auto 8rem;
+}
+.garantia .ballon-image{
+  height: 15rem;
+  top: -10rem;
+  right: 5rem; 
+  position: absolute;
+  z-index: 5;
+}
+.garantia .row{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap: 5rem;
+  align-items: center;
+  width: 80%;
+  margin: 0 auto;
+}
+.garantia p{
+  color: var(--blue-300);
+}
+.garantia img{
+  max-width: 100%;
+}
+@media (max-width: 768px) {
+  .garantia .row{
+    width: 100%;
+  }
+}
+@media (max-width: 576px) {
+  .garantia .row {
+    grid-template-columns: 1fr;
+  }
+  .garantia .ballon-image {
+    height: 10rem;
+    top: -5rem;
+  }
+}
