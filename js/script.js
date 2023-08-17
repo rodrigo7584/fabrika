@@ -19,11 +19,19 @@ document.addEventListener('scroll', function () {
   }
 })
 
-const swiper = new Swiper('.swiper-hero-index', {
-  direction: 'horizontal',
+const swiperHeroIndex = new Swiper('.swiper-hero-index', {
   loop: true,
   autoplay: {
     delay: 5000,
     disableOnInteraction: true
+  }
+})
+
+const swiperGroup = new Swiper('.swiper-group .swiper', {
+  loop: true,
+
+  navigation: {
+    nextEl: '.swiper-group  .swiper-button-next',
+    prevEl: '.swiper-group  .swiper-button-prev'
   }
 })

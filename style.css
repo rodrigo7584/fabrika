@@ -7,6 +7,7 @@ IMPORTS CSS
 
 @import url('./styles/swiper-hero-index.css');
 @import url('./styles/garantia.css');
+@import url('./styles/sobre.css');
 /*
 END IMPORTS CSS
 */
@@ -157,81 +158,65 @@ a:hover {
 .transition-before.transition-white::before{
   background-image: url('./img/transition.png');
 }
-.sobre{
-  background-image: url('./img/bg-blue.png');
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  padding: 6rem 0 12rem 0;
+.equipe{
+  position: relative;
+  padding: 5rem 0 8rem 0;
 }
-.sobre .title-simple{
-  width: 60rem;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 5rem;
-  text-align: center;
+.equipe .image-plane{
+  position: absolute;
+  height: 10rem;
+  top: -3rem;
+  z-index: 5;
+  left: 5rem;
 }
-.sobre .boxes{
+.equipe .row{
   display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 1.5rem;
+  gap: 10rem;
+  width: 70%;
+  margin: 0 auto;
 }
-.sobre .box{
-  background: var(--white);
-  border-radius: 2rem;
-  overflow: hidden;
-  width: 22rem;
+.equipe .content p{
+  color: var(--blue-300);
 }
-.sobre .box .thumb{
-  height: 15rem;
-  width: 100%;
+.equipe .swiper-group{
+  position: relative;
+  width: 15rem;
 }
-.sobre .box .thumb img{
-  width: 100%; 
-  height: 100%; 
-  object-fit: cover; 
+.equipe .swiper-group .swiper-button-next, .equipe .swiper-group .swiper-button-prev {
+  width: 2rem;
 }
-.sobre .box .content{
-  padding: 1.5rem;
+.equipe .swiper-group .swiper-button-next:after,.equipe .swiper-group  .swiper-button-prev:after {
+  font-size: 2rem;
+  font-weight: var(--font-black);
+  color: var(--blue-100);
 }
-.sobre .box .content .btn{
-  margin-bottom: 0;
-  margin-left: auto;
-  margin-right: auto;
+.equipe .swiper-group .swiper-button-next {
+  right: -2rem;
 }
-.sobre .box .content .box-title{
-    font-family: var(--ral);
-    font-weight: var(--font-bold);
-    font-size: 1.8rem;
-    text-align: center;
-    line-height: 1.2;
-    color: var(--blue-300);
-    margin-bottom: 0.5rem;
+.equipe .swiper-group .swiper-button-prev {
+  left: -2rem;
 }
-.sobre .box .content p{
+.equipe .swiper-group .swiper-group-content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+.equipe .swiper-group .swiper-group-content .icon{
+  width: 8rem;
+}
+.equipe .swiper-group .swiper-group-content strong{
+  font-family: var(--pop);
+  font-weight: var(--font-bold);
+  font-size: 3rem;
+  color: var(--blue-300);
+}
+.equipe .swiper-group .swiper-group-content p{
+  text-align: center;
   color: var(--blue-300);
   font-weight: var(--font-light);
   line-height: 1.5;
-  text-align: center;
 }
-
-@media (max-width: 992px) {
-  .sobre .box {
-    width: 24rem;
-  }
-}
-@media (max-width: 768px) {
-  .sobre .title-simple {
-    width: 100%;
-  }
-}
-@media (max-width: 576px) {
-  .sobre .box {
-    width: 28rem;
-  }
-}
-
 @media (max-width: 1400px) {
   .container {
     max-width: 1200px;
