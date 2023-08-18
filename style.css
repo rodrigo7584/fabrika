@@ -8,6 +8,10 @@ IMPORTS CSS
 @import url('./styles/swiper-hero-index.css');
 @import url('./styles/garantia.css');
 @import url('./styles/sobre.css');
+@import url('./styles/equipe.css');
+@import url('./styles/diferenciais.css');
+@import url('./styles/turbinar.css');
+
 /*
 END IMPORTS CSS
 */
@@ -29,7 +33,11 @@ CSS VARIABLES
   --pop: 'Poppins';
   --ral: 'Raleway';
 
-  --font-light:300;
+  --font-thin: 100;
+  --font-extra-light: 200;
+  --font-light: 300;
+  --font-regular: 400;
+  --font-medium: 500;
   --font-semi-bold: 600;
   --font-bold: 700;
   --font-black: 900;
@@ -82,7 +90,7 @@ h3{
 }
 .title-simple{
   font-family: var(--ral);
-  font-weight: var(--font-bold);
+  font-weight: var(--font-medium);
   color: var(--white);
   line-height: 1.2;
   margin-bottom: 2rem;
@@ -91,12 +99,13 @@ h3{
 }
 .title-simple strong{
   color: var(--orange);
+  font-weight: var(--font-bold);
 }
 p{
   font-family: var(--pop);
   font-weight: var(--font-semi-bold);
   font-size: 1.3rem;
-  line-height: 1.3;
+  line-height: 1.5;
   margin-bottom: 0.5rem;
 }
 a{
@@ -137,7 +146,8 @@ a:hover {
 .btn-orange{
   background: var(--orange);
 }
-.transition-before{
+.transition-before,
+.transition-after{
   position: relative;
 }
 .transition-before::before{
@@ -152,71 +162,115 @@ a:hover {
   top: -4.9rem;
   left: 0;
 }
+.transition-after::after{
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 5rem;
+  z-index: 5;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: bottom;
+  bottom: -4.9rem;
+  left: 0;
+}
 .transition-before.transition-blue::before {
   background-image: url('./img/transition-3.png');
 }
 .transition-before.transition-white::before{
   background-image: url('./img/transition.png');
 }
-.equipe{
-  position: relative;
-  padding: 5rem 0 8rem 0;
+.transition-after.transition-light-blue::after{
+  background-image: url('./img/transition-2.png');
 }
-.equipe .image-plane{
-  position: absolute;
-  height: 10rem;
-  top: -3rem;
-  z-index: 5;
-  left: 5rem;
+.turbinar{
+  padding: 9rem 0;
+  background: url('./img/ballon-2.png'),url('./img/bg-blue-2.png');
+  background-repeat: no-repeat;
+  background-size: 20rem auto, cover;
+  background-position: left center, top left;
 }
-.equipe .row{
-  display: flex;
-  gap: 10rem;
-  width: 70%;
+.turbinar .title-simple{
+  width: 90rem;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+.turbinar .subtitle{
+  font-family: var(--pop);
+  font-weight: var(--font-semi-bold);
+  text-align: center;
+  line-height: 1.5;
+  font-size: 1.5rem;
+  width: 60rem;
   margin: 0 auto;
 }
-.equipe .content p{
-  color: var(--blue-300);
-}
-.equipe .swiper-group{
-  position: relative;
-  width: 15rem;
-}
-.equipe .swiper-group .swiper-button-next, .equipe .swiper-group .swiper-button-prev {
-  width: 2rem;
-}
-.equipe .swiper-group .swiper-button-next:after,.equipe .swiper-group  .swiper-button-prev:after {
-  font-size: 2rem;
-  font-weight: var(--font-black);
-  color: var(--blue-100);
-}
-.equipe .swiper-group .swiper-button-next {
-  right: -2rem;
-}
-.equipe .swiper-group .swiper-button-prev {
-  left: -2rem;
-}
-.equipe .swiper-group .swiper-group-content{
+.turbinar .boxes{
+  padding: 5rem 0;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  width: 80%;
+  margin: 0 auto;
 }
-.equipe .swiper-group .swiper-group-content .icon{
-  width: 8rem;
+.turbinar .box{
+  width: 18rem;
 }
-.equipe .swiper-group .swiper-group-content strong{
-  font-family: var(--pop);
+.turbinar .box .thumb{
+  height: 10rem;
+  width: 100%;
+  border-radius: 1.5rem;
+  border: 0.3rem solid var(--gray);
+  overflow: hidden;
+  margin-bottom: 1rem;
+}
+.turbinar .box .thumb img{
+width: 100% !important;
+height: 100% !important;
+object-fit: cover;
+}
+.turbinar .box .title-box{
+  font-family: var(--ral);
   font-weight: var(--font-bold);
-  font-size: 3rem;
-  color: var(--blue-300);
-}
-.equipe .swiper-group .swiper-group-content p{
   text-align: center;
-  color: var(--blue-300);
-  font-weight: var(--font-light);
-  line-height: 1.5;
+  color: var(--white);
+  font-size: 1.4rem;
+  line-height: 1.3;
 }
+
+@media (max-width: 992px) {
+  .turbinar {
+    background-size: 13rem auto, cover;
+  }
+  .turbinar .title-simple {
+    width: 100%;
+  }
+ }
+@media (max-width: 768px) {
+  .turbinar {
+    background-size: 10rem auto, cover;
+  }
+  .turbinar .subtitle {
+    width: 100%;
+  }
+}
+@media (max-width: 576px) {
+  .turbinar {
+    padding: 9rem 0 0 0;
+  }
+  .turbinar .subtitle {
+    font-size: 1.3rem;
+  }
+  .turbinar .box {
+    width: 25rem;
+}
+.turbinar .box .thumb {
+  height: 13rem;
+}
+
+}
+
 @media (max-width: 1400px) {
   .container {
     max-width: 1200px;
@@ -243,12 +297,25 @@ a:hover {
     font-size: 2.5rem;
   }
   .transition-before::before {
-    background-size: contain;
+    height: 3rem;
+    top: -2.9rem;
+  }
+  .transition-after::after{
+    height: 3rem;
+    bottom: -2.9rem;
   }
 }
 @media (max-width: 576px) {
   .container {
     max-width: 400px;
+  }
+  .transition-before::before {
+    height: 2rem;
+    top: -1.9rem;
+  }
+  .transition-after::after{
+    height: 2rem;
+    bottom: -1.9rem;
   }
 }
 @media (max-width: 400px) {
