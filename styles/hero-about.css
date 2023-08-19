@@ -1,0 +1,25 @@
+.hero-about {
+  padding: 5rem 0;
+  background: var(--blue-300);
+}
+.hero-about .row {
+  width: 100rem;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 4rem;
+  align-items: center;
+}
+.hero-about .image img {
+  max-width: 100%;
+}
+@media (max-width: 1200px) {
+  .hero-about .row {
+    width: 100%;
+  }
+}
+@media (max-width: 576px) {
+  .hero-about .row {
+    grid-template-columns: 1fr;
+  }
+}

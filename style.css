@@ -14,10 +14,13 @@ IMPORTS CSS
 @import url('./styles/personalizado.css');
 @import url('./styles/planejador.css');
 @import url('./styles/evento.css');
+
+@import url('./styles/hero-about.css');
+@import url('./styles/sobre-nos.css');
+@import url('./styles/mvv.css');
 /*
 END IMPORTS CSS
-*/
-/* 
+*/ /* 
 CSS VARIABLES 
 */
 :root {
@@ -25,7 +28,7 @@ CSS VARIABLES
   scroll-behavior: smooth;
 
   --white: #ffffff;
-  --gray:#f6f9fd;
+  --gray: #f6f9fd;
   --black: #000000;
   --blue-300: #001741;
   --blue-100: #586cb5;
@@ -47,7 +50,7 @@ CSS VARIABLES
 /*
 END CSS VARIABLES
 */
-*{
+* {
   box-sizing: border-box;
 }
 body {
@@ -55,26 +58,26 @@ body {
   font-family: var(--pop);
   color: var(--white);
 }
-h1{
+h1 {
   font-family: var(--ral);
   font-weight: var(--font-black);
   font-size: 4rem;
   line-height: 1.3;
   margin-bottom: 0.5rem;
 }
-h2{
+h2 {
   font-family: var(--ral);
   font-weight: var(--font-black);
   font-size: 3rem;
   margin-bottom: 0.5rem;
 }
-h3{
+h3 {
   font-family: var(--ral);
   font-weight: var(--font-black);
   font-size: 2rem;
   margin-bottom: 0.5rem;
 }
-.title-bar{
+.title-bar {
   font-family: var(--ral);
   font-weight: var(--font-black);
   position: relative;
@@ -82,7 +85,7 @@ h3{
   margin-top: 2.7rem;
   margin-bottom: 2rem;
 }
-.title-bar::before{
+.title-bar::before {
   position: absolute;
   content: '';
   width: 15rem;
@@ -90,7 +93,7 @@ h3{
   top: -2rem;
   background-color: var(--orange);
 }
-.title-simple{
+.title-simple {
   font-family: var(--ral);
   font-weight: var(--font-medium);
   color: var(--white);
@@ -99,18 +102,45 @@ h3{
   text-transform: uppercase;
   font-size: 3rem;
 }
-.title-simple strong{
+.title-simple strong {
   color: var(--orange);
   font-weight: var(--font-bold);
 }
-p{
+ul li {
   font-family: var(--pop);
   font-weight: var(--font-semi-bold);
   font-size: 1.3rem;
   line-height: 1.5;
   margin-bottom: 0.5rem;
 }
-a{
+ul.red-list {
+  padding-left: 3rem;
+}
+ul.red-list li {
+  display: flex;
+  gap: 1rem;
+  color: var(--blue-300);
+  position: relative;
+}
+ul.red-list li::before {
+  content: '';
+  position: absolute;
+  left: -3rem;
+  top: 0rem;
+  background-image: url('./img/icon-check.png');
+  width: 2rem;
+  height: 2rem;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+p {
+  font-family: var(--pop);
+  font-weight: var(--font-semi-bold);
+  font-size: 1.3rem;
+  line-height: 1.5;
+  margin-bottom: 0.5rem;
+}
+a {
   color: var(--white);
   font-family: var(--pop);
   font-weight: var(--font-bold);
@@ -125,7 +155,7 @@ a:hover {
   max-width: 1400px;
   margin: 0 auto;
 }
-.container-fluid{
+.container-fluid {
   width: 100%;
 }
 .row {
@@ -133,7 +163,7 @@ a:hover {
   padding-right: 1rem;
   box-sizing: border-box;
 }
-.btn{
+.btn {
   border-radius: 5rem;
   padding: 0.5rem 2rem;
   color: var(--white);
@@ -145,20 +175,20 @@ a:hover {
   width: fit-content;
   margin: 1rem 0;
 }
-.btn-orange{
+.btn-orange {
   background: var(--orange);
 }
-.btn-blue{
+.btn-blue {
   border-radius: 0.8rem;
   font-weight: var(--font-semi-bold);
   background: var(--blue-300);
   font-size: 1.8rem;
 }
 .transition-before,
-.transition-after{
+.transition-after {
   position: relative;
 }
-.transition-before::before{
+.transition-before::before {
   content: '';
   position: absolute;
   width: 100%;
@@ -170,7 +200,7 @@ a:hover {
   top: -4.9rem;
   left: 0;
 }
-.transition-after::after{
+.transition-after::after {
   content: '';
   position: absolute;
   width: 100%;
@@ -185,16 +215,13 @@ a:hover {
 .transition-before.transition-blue::before {
   background-image: url('./img/transition-3.png');
 }
-.transition-before.transition-white::before{
+.transition-before.transition-white::before {
   background-image: url('./img/transition.png');
 }
-.transition-after.transition-light-blue::after{
+.transition-after.transition-light-blue::after {
   background-image: url('./img/transition-2.png');
 }
-.hero-slider-about{
-  padding: 5rem 0;
-  background: var(--blue-300);
-}
+
 @media (max-width: 1400px) {
   .container {
     max-width: 1200px;
@@ -204,27 +231,27 @@ a:hover {
   .container {
     max-width: 992px;
   }
- }
+}
 @media (max-width: 992px) {
   .container {
     max-width: 768px;
   }
- }
+}
 @media (max-width: 768px) {
   .container {
     max-width: 576px;
   }
-  h1{
+  h1 {
     font-size: 3rem;
   }
-  .title-simple{
+  .title-simple {
     font-size: 2.5rem;
   }
   .transition-before::before {
     height: 3rem;
     top: -2.9rem;
   }
-  .transition-after::after{
+  .transition-after::after {
     height: 3rem;
     bottom: -2.9rem;
   }
@@ -237,13 +264,13 @@ a:hover {
     height: 2rem;
     top: -1.9rem;
   }
-  .transition-after::after{
+  .transition-after::after {
     height: 2rem;
     bottom: -1.9rem;
   }
 }
 @media (max-width: 400px) {
-  .title-simple{
+  .title-simple {
     font-size: 2rem;
   }
 }

@@ -1,0 +1,48 @@
+.sobre-nos {
+  padding: 5rem 0;
+  background-image: url('./img/line-2.png');
+  background-repeat: no-repeat;
+  background-size: 50rem auto;
+  background-position: left center;
+}
+.sobre-nos .row {
+  width: 80%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  gap: 5rem;
+}
+.sobre-nos .row .image img {
+  max-width: 100%;
+}
+.sobre-nos h2 {
+  color: var(--blue-100);
+}
+.sobre-nos p {
+  color: var(--blue-300);
+}
+@media (max-width: 992px) {
+  .sobre-nos .row {
+    width: 100%;
+  }
+  .sobre-nos {
+    background-size: 30rem auto;
+  }
+}
+@media (max-width: 768px) {
+  .sobre-nos .row {
+    grid-template-columns: 1fr;
+  }
+  .sobre-nos .content {
+    order: 1;
+  }
+  .sobre-nos .image {
+    order: 2;
+  }
+}
+@media (max-width: 576px) {
+  .sobre-nos {
+    background-position: left calc(100% - 20rem);
+  }
+}
