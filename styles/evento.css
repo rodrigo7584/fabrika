@@ -1,0 +1,56 @@
+.evento{
+  padding: 5rem 0 8rem 0;
+  background: url(../img/grass.png),url(../img/ballon-3.png),url(../img/kite.png);
+  background-repeat: no-repeat;
+  background-size: 100% 29rem, 14rem auto, 16rem auto;
+  background-position: bottom left, right 3rem, left 3rem;
+}
+.evento h2{
+  color: var(--blue-100);
+  text-align: center;
+  margin-bottom: 1rem;
+}
+.evento h3{
+  font-weight: var(--font-medium);
+  color: var(--blue-100);
+  text-align: center;
+}
+.evento .boxes{
+  padding: 5rem 0;
+  display: flex;
+  justify-content: center;
+  gap: 15rem;
+}
+.evento .box {
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ gap: 2rem; 
+}
+.evento .box .icon-kid{
+  height: 30rem;
+}
+@media (max-width: 768px) {
+  .evento {
+    background-size: 100% 29rem, 11rem auto, 12rem auto;
+  }
+}
+@media (max-width: 576px) {
+  .evento {
+    padding: 5rem 0 0 0 ;
+    background-size: 140% 15rem, 8rem auto, 8rem auto;
+    background-position: bottom center, right 12rem, left 13rem;
+}
+  .evento .boxes {
+    gap: 4rem;
+}
+.evento .box {
+  gap: 1rem;
+}
+.evento .box .icon-kid {
+  height: 20rem;
+}
+  .evento button{
+    font-size: 1.5rem;
+  }
+}

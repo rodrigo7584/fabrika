@@ -11,7 +11,9 @@ IMPORTS CSS
 @import url('./styles/equipe.css');
 @import url('./styles/diferenciais.css');
 @import url('./styles/turbinar.css');
-
+@import url('./styles/personalizado.css');
+@import url('./styles/planejador.css');
+@import url('./styles/evento.css');
 /*
 END IMPORTS CSS
 */
@@ -136,7 +138,7 @@ a:hover {
   padding: 0.5rem 2rem;
   color: var(--white);
   text-align: center;
-  font-size: 1.3rem;
+  font-size: 1.5rem;
   display: flex;
   gap: 0.5rem;
   align-items: center;
@@ -145,6 +147,12 @@ a:hover {
 }
 .btn-orange{
   background: var(--orange);
+}
+.btn-blue{
+  border-radius: 0.8rem;
+  font-weight: var(--font-semi-bold);
+  background: var(--blue-300);
+  font-size: 1.8rem;
 }
 .transition-before,
 .transition-after{
@@ -183,94 +191,10 @@ a:hover {
 .transition-after.transition-light-blue::after{
   background-image: url('./img/transition-2.png');
 }
-.turbinar{
-  padding: 9rem 0;
-  background: url('./img/ballon-2.png'),url('./img/bg-blue-2.png');
-  background-repeat: no-repeat;
-  background-size: 20rem auto, cover;
-  background-position: left center, top left;
-}
-.turbinar .title-simple{
-  width: 90rem;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
-}
-.turbinar .subtitle{
-  font-family: var(--pop);
-  font-weight: var(--font-semi-bold);
-  text-align: center;
-  line-height: 1.5;
-  font-size: 1.5rem;
-  width: 60rem;
-  margin: 0 auto;
-}
-.turbinar .boxes{
+.hero-slider-about{
   padding: 5rem 0;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 2rem;
-  width: 80%;
-  margin: 0 auto;
+  background: var(--blue-300);
 }
-.turbinar .box{
-  width: 18rem;
-}
-.turbinar .box .thumb{
-  height: 10rem;
-  width: 100%;
-  border-radius: 1.5rem;
-  border: 0.3rem solid var(--gray);
-  overflow: hidden;
-  margin-bottom: 1rem;
-}
-.turbinar .box .thumb img{
-width: 100% !important;
-height: 100% !important;
-object-fit: cover;
-}
-.turbinar .box .title-box{
-  font-family: var(--ral);
-  font-weight: var(--font-bold);
-  text-align: center;
-  color: var(--white);
-  font-size: 1.4rem;
-  line-height: 1.3;
-}
-
-@media (max-width: 992px) {
-  .turbinar {
-    background-size: 13rem auto, cover;
-  }
-  .turbinar .title-simple {
-    width: 100%;
-  }
- }
-@media (max-width: 768px) {
-  .turbinar {
-    background-size: 10rem auto, cover;
-  }
-  .turbinar .subtitle {
-    width: 100%;
-  }
-}
-@media (max-width: 576px) {
-  .turbinar {
-    padding: 9rem 0 0 0;
-  }
-  .turbinar .subtitle {
-    font-size: 1.3rem;
-  }
-  .turbinar .box {
-    width: 25rem;
-}
-.turbinar .box .thumb {
-  height: 13rem;
-}
-
-}
-
 @media (max-width: 1400px) {
   .container {
     max-width: 1200px;

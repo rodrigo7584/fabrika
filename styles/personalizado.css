@@ -1,0 +1,27 @@
+.personalizado{
+  padding: 5rem 0 8rem 0; 
+ }
+ .personalizado .row{
+   width: 90%;
+   margin: 0 auto;
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+   gap: 3rem;
+   align-items: center;
+ }
+ .personalizado p{
+   color: var(--blue-300);
+ }
+ .personalizado .image img{
+   max-width: 100%;
+ }
+ @media (max-width: 992px) {
+   .personalizado .row{
+     width: 100%;
+   }
+ }
+ @media (max-width: 768px) {
+   .personalizado .row {
+     grid-template-columns: 1fr;
+   }
+ }

@@ -128,3 +128,7 @@ a {
   display: block;
   text-decoration: none;
 }
+button{
+  border: none;
+  background-color: unset;
+}
