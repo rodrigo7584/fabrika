@@ -1,39 +1,38 @@
-.planejador{
+.planejador {
   padding: 10rem 0;
   background-color: var(--blue-300);
-  background-image: url('../img/boys-laughing.png');
+  background-image: url('../img/light.png'), url('../img/boys-laughing.png');
   background-repeat: no-repeat;
-  background-position: right;
+  background-position: left, right;
   background-size: auto 100%;
 }
-.planejador .row{
+.planejador .row {
   width: 35rem;
 }
-.planejador h2{
+.planejador h2 {
   color: var(--white);
   line-height: 1.3;
   margin-bottom: 2rem;
 }
-.planejador p{
+.planejador p {
   font-family: var(--ral);
   font-weight: var(--font-regular);
-  font-size: 2rem;
   margin-bottom: 2rem;
 }
 @media (max-width: 768px) {
-  .planejador{
+  .planejador {
     padding: 6rem;
     background-image: none;
   }
-  .planejador .row{
+  .planejador .row {
     width: 100%;
   }
 }
 @media (max-width: 576px) {
-  .planejador  {
-    padding: 6rem 0;}
+  .planejador {
+    padding: 6rem 0;
+  }
   .planejador p {
-    
     font-size: 1.6rem;
   }
 }

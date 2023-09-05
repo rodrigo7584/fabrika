@@ -8,7 +8,7 @@ header.menu {
   z-index: 10;
   transition: 0.2s ease-in-out;
 }
-header.menu.scrolled{
+header.menu.scrolled {
   background: var(--blue-300);
 }
 header.menu .row {
@@ -17,12 +17,12 @@ header.menu .row {
   align-items: center;
 }
 header.menu a.logo img {
-  height: 5rem;
+  height: 6.5rem;
 }
 header.menu nav ul {
   display: flex;
   align-items: center;
-  gap: 6rem;
+  gap: 3rem;
 }
 header.menu nav li a {
   font-family: var(--pop);
@@ -38,15 +38,13 @@ header.menu .btn-mobile-menu {
 
 @media (max-width: 1200px) {
   header.menu nav ul {
-    gap: 4.3rem;
+    gap: 1rem;
   }
- }
+}
 @media (max-width: 992px) {
   header.menu nav ul {
     gap: 0.8rem;
   }
-}
-@media (max-width: 768px) {
   header.menu .btn-mobile-menu {
     background: none;
     border: none;
@@ -70,7 +68,7 @@ header.menu .btn-mobile-menu {
   header.menu .btn-mobile-menu.active div:nth-child(3) {
     transform: translate(0px, -11px) rotateZ(-45deg);
   }
-   header.menu nav ul {
+  header.menu nav ul {
     display: flex;
     flex-direction: column;
     gap: 2rem;
@@ -86,7 +84,7 @@ header.menu .btn-mobile-menu {
     overflow: hidden;
     z-index: 99;
   }
-  header.menu nav ul li:first-child{
+  header.menu nav ul li:first-child {
     margin-top: 2rem;
   }
   header.menu nav.active ul {

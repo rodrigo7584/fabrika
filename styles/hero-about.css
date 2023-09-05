@@ -1,6 +1,10 @@
 .hero-about {
-  padding: 5rem 0;
+  padding: 10rem 0 5rem 0;
   background: var(--blue-300);
+  background-image: url('../img/light.png');
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+  background-position: left;
 }
 .hero-about .row {
   width: 100rem;

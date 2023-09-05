@@ -136,8 +136,8 @@ ul.red-list li::before {
 }
 p {
   font-family: var(--pop);
-  font-weight: var(--font-semi-bold);
-  font-size: 1.3rem;
+  font-weight: var(--font-medium);
+  font-size: 1.5rem;
   line-height: 1.5;
   margin-bottom: 0.5rem;
 }
@@ -166,7 +166,7 @@ a:hover {
 }
 .btn {
   border-radius: 5rem;
-  padding: 0.5rem 2rem;
+  padding: 0.9rem 2rem;
   color: var(--white);
   text-align: center;
   font-size: 1.5rem;
