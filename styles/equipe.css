@@ -1,32 +1,34 @@
-.equipe{
+.equipe {
   position: relative;
-  padding: 5rem 0 5rem 0;
+  padding: 8rem 0;
 }
-.equipe .image-plane{
+.equipe .image-plane {
   position: absolute;
   height: 10rem;
   top: -3rem;
   z-index: 5;
   left: 5rem;
 }
-.equipe .row{
+.equipe .row {
   display: flex;
   align-items: center;
   gap: 20rem;
   width: 70%;
   margin: 0 auto;
 }
-.equipe .content p{
+.equipe .content p {
   color: var(--blue-300);
 }
-.equipe .swiper-group{
+.equipe .swiper-group {
   position: relative;
-  width: 15rem;
+  width: 20rem;
 }
-.equipe .swiper-group .swiper-button-next, .equipe .swiper-group .swiper-button-prev {
+.equipe .swiper-group .swiper-button-next,
+.equipe .swiper-group .swiper-button-prev {
   width: 2rem;
 }
-.equipe .swiper-group .swiper-button-next:after,.equipe .swiper-group  .swiper-button-prev:after {
+.equipe .swiper-group .swiper-button-next:after,
+.equipe .swiper-group .swiper-button-prev:after {
   font-size: 2rem;
   font-weight: var(--font-black);
   color: var(--blue-100);
@@ -37,22 +39,22 @@
 .equipe .swiper-group .swiper-button-prev {
   left: -2rem;
 }
-.equipe .swiper-group .swiper-group-content{
+.equipe .swiper-group .swiper-group-content {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 1rem;
 }
-.equipe .swiper-group .swiper-group-content .icon{
+.equipe .swiper-group .swiper-group-content .icon {
   width: 8rem;
 }
-.equipe .swiper-group .swiper-group-content strong{
+.equipe .swiper-group .swiper-group-content strong {
   font-family: var(--pop);
   font-weight: var(--font-bold);
-  font-size: 3rem;
+  font-size: 4rem;
   color: var(--blue-300);
 }
-.equipe .swiper-group .swiper-group-content p{
+.equipe .swiper-group .swiper-group-content p {
   text-align: center;
   color: var(--blue-300);
   font-weight: var(--font-light);
@@ -78,7 +80,7 @@
     height: 8rem;
   }
   .equipe .row {
-flex-direction: column;
-width: 100%;
+    flex-direction: column;
+    width: 100%;
   }
 }

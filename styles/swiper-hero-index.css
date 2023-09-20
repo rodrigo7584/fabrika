@@ -1,29 +1,37 @@
-
+.hero-slider-index {
+  background-color: var(--blue-300);
+  background-image: url('../img/light.png');
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+  background-position: left center;
+}
 .swiper-hero-index {
   width: 100%;
 }
-.swiper-hero-index .swiper-slide{
+.swiper-hero-index .swiper-slide {
   padding-top: 8.2rem;
-  background-color: var(--blue-300);
   background-repeat: no-repeat;
   background-position: right;
   background-size: auto 100%;
 }
-.swiper-hero-index .swiper-slide .row{
+.swiper-hero-index .swiper-slide .row {
   display: flex;
   align-items: center;
-  height: 100%;  
-  min-height: 50rem;  
+  height: 100%;
+  min-height: 50rem;
   padding: 10rem 1rem;
 }
-.swiper-hero-index .swiper-slide .content{
+.swiper-hero-index .swiper-slide .content {
   width: 45rem;
 }
+.swiper-hero-index .swiper-slide .content p {
+  font-size: 1.6rem;
+}
 @media (max-width: 768px) {
-  .swiper-hero-index .swiper-slide{
-    background-image: none!important;
+  .swiper-hero-index .swiper-slide {
+    background-image: none !important;
   }
-  .swiper-hero-index .swiper-slide .row{
+  .swiper-hero-index .swiper-slide .row {
     min-height: unset;
     padding: 3rem 1rem 5rem 1rem;
   }
