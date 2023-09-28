@@ -337,18 +337,87 @@
     <section class="evento">
       <div class="container">
         <div class="row">
-          <h2>Planeje o seu evento</h2>
-          <h3>Para quem será a festa?</h3>
-          <div class="boxes">
-            <div class="box">
-              <img src="./img/illustration-girl.png" alt="" class="icon-kid" />
-              <button class="btn btn-blue">Menina</button>
+          <form class="event-form">
+            <div class="tab">
+              <h2>Planeje o seu evento</h2>
+              <h3>Para quem será a festa?</h3>
+              <div class="boxes">
+                <div class="box">
+                  <img src="./img/illustration-girl.png" alt="" class="icon-kid" />
+                  <button class="btn btn-unique btn-select" type="button">Menina</button>
+                </div>
+                <div class="box">
+                  <img src="./img/illustration-boy.png" alt="" class="icon-kid" />
+                  <button class="btn btn-unique btn-select" type="button">Menino</button>
+                </div>
+              </div>
             </div>
-            <div class="box">
-              <img src="./img/illustration-boy.png" alt="" class="icon-kid" />
-              <button class="btn btn-blue">Menino</button>
+
+            <div class="tab">
+              <h2>Número de crianças convidadas</h2>
+              <div class="boxes">
+                <div class="box">
+                <button class="btn btn-unique btn-select" type="button">Até 15 crianças</button>
+                <button class="btn btn-unique btn-select" type="button">Até 30 crianças</button>
+                <button class="btn btn-unique btn-select" type="button">Até 50 crianças</button>
+                <button class="btn btn-unique btn-select" type="button">Até 75 crianças</button>
+                <button class="btn btn-unique btn-select" type="button">Até 100 crianças</button>
+                </div>
+              </div>
             </div>
-          </div>
+
+            <div class="tab">
+              <h2>Escolha a Faixa Etária</h2>
+              <h3>Escolha a faixa etária dos convidados</h3>
+              <div class="boxes">
+                <div class="box">
+                  <img src="./img/illustration-girl.png" alt="" class="icon-kid" />
+                  <button class="btn btn-unique btn-select" type="button">0 a 2 anos</button>
+                </div>
+                <div class="box">
+                  <img src="./img/illustration-boy.png" alt="" class="icon-kid" />
+                  <button class="btn btn-unique btn-select" type="button">3 a 5 anos</button>
+                </div>
+                <div class="box">
+                  <img src="./img/illustration-girl.png" alt="" class="icon-kid" />
+                  <button class="btn btn-unique btn-select" type="button">6 a 8 anos</button>
+                </div>
+                <div class="box">
+                  <img src="./img/illustration-boy.png" alt="" class="icon-kid" />
+                  <button class="btn btn-unique btn-select" type="button">9 a 12 anos</button>
+                </div>
+                <div class="box">
+                  <img src="./img/illustration-girl.png" alt="" class="icon-kid" />
+                  <button class="btn btn-unique btn-select" type="button">13 a 15 anos</button>
+                </div>                
+              </div>
+            </div>
+
+            <div class="tab">
+              <h2>Onde acontecerá o evento?</h2>
+              <div class="boxes">
+                <div class="box">
+                  <img src="./img/illustration-boy.png" alt="" class="icon-kid" />
+                  <input type="text"/>
+                </div>
+              </div>
+            </div>
+            <div class="tab">
+              <h2>Escolha o tema da sua festa</h2>
+            </div>
+            <div class="tab">
+              <h2>Quer turbirnar a sua festa? </h2>
+              <h3>Selecione uma ou mais opções abaixo:</h3>
+            </div>
+            <button type="button" class="btn btn-prev" onclick="nextPrev(-1)">
+              Voltar
+            </button>
+            <button type="button" class="btn btn-next" onclick="nextPrev(1)">
+              Avançar
+            </button>
+
+          </form>
+          
         </div>
       </div>
     </section>

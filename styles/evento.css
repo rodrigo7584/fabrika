@@ -30,6 +30,24 @@
 .evento .box .icon-kid{
   height: 30rem;
 }
+
+/* Hide all steps by default: */
+.tab {
+  display: none;
+}
+
+/*BTN*/
+.btn.btn-select{
+  color: var(--blue-300);
+  border:0.1rem solid var(--blue-300);
+  background: var(--white);
+  font-weight: var(--font-medium);
+  font-size: 1.6rem;
+}
+.btn.btn-select.selected{
+  background: var(--blue-300);
+  color:var(--white);
+}
 @media (max-width: 768px) {
   .evento {
     background-size: 100% 29rem, 11rem auto, 12rem auto;

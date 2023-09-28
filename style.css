@@ -175,12 +175,13 @@ a:hover {
   align-items: center;
   width: fit-content;
   margin: 1rem 0;
+  cursor: pointer;
 }
 .btn-orange {
   background: var(--orange);
 }
 .btn-blue {
-  border-radius: 0.8rem;
+  border-radius: 5rem;
   font-weight: var(--font-semi-bold);
   background: var(--blue-300);
   font-size: 1.8rem;
