@@ -1,8 +1,10 @@
 function initFormEvent() {
   const eventForm = document.querySelector('.event-form')
   if (eventForm.length) {
+    //seleciona todas tabs
     const tabs = eventForm.querySelectorAll('.tab')
     tabs.forEach(tab => {
+      //busca cada grupo de botoes que aceita ser selecionado um so em cada tab
       const uniqueButtons = tab.querySelectorAll('.btn-unique')
       uniqueButtons.forEach(button => {
         button.addEventListener('click', () => {
@@ -12,7 +14,7 @@ function initFormEvent() {
           })
         })
       })
-
+      //busca grupo de botoes aceita ser selecionado varios cada tab
       const multipleButtons = tab.querySelectorAll('.btn-multiple')
       multipleButtons.forEach(button => {
         button.addEventListener('click', () => {
@@ -24,12 +26,14 @@ function initFormEvent() {
         })
       })
     })
+    //mostra as tabs
   }
 }
 initFormEvent()
 
 let currentTab = 0 // Seta a primeira tab
 showTab(currentTab) // Mostra a primeira tab
+
 function showTab(n) {
   // Esta função mostra a tab em tela
   const tabs = document.querySelectorAll('.tab')
@@ -46,9 +50,11 @@ function showTab(n) {
 
   //o inverso se for a ultima tav não mostra o next e muda o conteudo do next para submit
   if (n == tabs.length - 1) {
-    document.querySelector('.btn-next').innerHTML = 'Enviar'
+    // document.querySelector('.btn-next').innerHTML = 'Enviar'
+    document.querySelector('.btn-next').style.display = 'none'
   } else {
-    document.querySelector('.btn-next').innerHTML = 'Avançar'
+    //document.querySelector('.btn-next').innerHTML = 'Avançar'
+    document.querySelector('.btn-next').style.display = 'flex'
   }
 }
 
@@ -78,8 +84,12 @@ function initConstructEmail() {
     const tabs = eventForm.querySelectorAll('.tab')
     tabs.forEach(tab => {
       const buttonSelected = tab.querySelectorAll('.btn.selected')
+      const inputs = tab.querySelectorAll('input')
       buttonSelected.forEach(button => {
         console.log(button.innerHTML)
+      })
+      inputs.forEach(inpu => {
+        console.log(inpu.value)
       })
     })
   }

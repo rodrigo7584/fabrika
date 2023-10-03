@@ -505,6 +505,7 @@
                       a qualquer momento pode deixar de receber as nossas mensagens ou editar os seus dados. 
                       Termos e Condições
                     </p>
+                    <button type="button" onclick="initConstructEmail()"></button>
                   </div>
                 </div>
               </div>
