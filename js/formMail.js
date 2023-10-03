@@ -12,6 +12,17 @@ function initFormEvent() {
           })
         })
       })
+
+      const multipleButtons = tab.querySelectorAll('.btn-multiple')
+      multipleButtons.forEach(button => {
+        button.addEventListener('click', () => {
+          if (button.classList.contains('selected')) {
+            button.classList.remove('selected')
+          } else {
+            button.classList.add('selected')
+          }
+        })
+      })
     })
   }
 }
@@ -30,7 +41,7 @@ function showTab(n) {
   if (n == 0) {
     document.querySelector('.btn-prev').style.display = 'none'
   } else {
-    document.querySelector('.btn-prev').style.display = 'inline'
+    document.querySelector('.btn-prev').style.display = 'flex'
   }
 
   //o inverso se for a ultima tav não mostra o next e muda o conteudo do next para submit
@@ -53,12 +64,27 @@ function nextPrev(n) {
 
   // se tiver na ultima tab e clicar no botao submit ele envia o form
   if (currentTab >= tabs.length) {
-    enviar()
+    // enviar()
+    initConstructEmail()
     return false
   }
   // senão mostra a proxima tab
   showTab(currentTab)
 }
+
+function initConstructEmail() {
+  const eventForm = document.querySelector('.event-form')
+  if (eventForm.length) {
+    const tabs = eventForm.querySelectorAll('.tab')
+    tabs.forEach(tab => {
+      const buttonSelected = tab.querySelectorAll('.btn.selected')
+      buttonSelected.forEach(button => {
+        console.log(button.innerHTML)
+      })
+    })
+  }
+}
+initConstructEmail()
 
 function enviar() {
   fetch('https://formsubmit.co/ajax/rodrigo.gandhi.oliveira@gmail.com', {

@@ -4,7 +4,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600;700&family=Raleway:wght@400;500;600;700;800;900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;500;600;700;800;900&family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap"
       rel="stylesheet"
     />
     <link rel="icon" type="image/png" href="./img/favicon-32.png" sizes="32x32" />

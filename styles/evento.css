@@ -15,11 +15,24 @@
   color: var(--blue-100);
   text-align: center;
 }
+.evento .event-form{
+  display: grid;
+  grid-template-columns: 14rem calc(100% - 28rem) 14rem;
+  max-width: 100%;
+}
+.evento .tabs{
+  grid-column: 2/3;
+}
+.evento .tab {
+  display: none;
+}
 .evento .boxes{
   padding: 5rem 0;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
-  gap: 15rem;
+  align-items: flex-end;
+  gap: 3rem;
 }
 .evento .box {
  display: flex;
@@ -28,26 +41,106 @@
  gap: 2rem; 
 }
 .evento .box .icon-kid{
-  height: 30rem;
+  height: 25rem;
+}
+.evento .box .icon-kids-group{
+width: 65%;
+}
+.evento .box:nth-child(1)  .icon-kid-growing{
+  height: 11rem;
+}
+.evento .box:nth-child(2)  .icon-kid-growing{
+  height: 17rem;
+}
+.evento .box:nth-child(3)  .icon-kid-growing{
+  height: 21rem;
+}
+.evento .box:nth-child(4)  .icon-kid-growing{
+  height: 24rem;
+}
+.evento .box:nth-child(5)  .icon-kid-growing{
+  height: 25rem;
+}
+.evento .box .icon-city{
+  width: 65%;
+}
+.evento .icon-kids-group-2 {
+    width: 65%;
+}
+.evento .icon-kids-group-3 {
+  width: 65%;
+}
+.evento .box .box-buttons{
+  display: flex;
+  gap: 3rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.evento .btn.btn-prev,
+.evento .btn.btn-next{
+  color: var(--blue-300);
+  font-weight: var(--font-semi-bold);
+  align-self: center;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.evento .btn.btn-prev::before,
+.evento .btn.btn-next::after{
+  content: '';
+  background-color: var(--blue-100);
+  background-image: url('../img/arrow.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 50%;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 100%;
 }
 
-/* Hide all steps by default: */
-.tab {
-  display: none;
+.evento .btn.btn-prev{
+  grid-column: 1/2;
+  justify-self: left;
 }
-
-/*BTN*/
-.btn.btn-select{
+.evento .btn.btn-prev::before{
+  transform: rotate(90deg);
+}
+.evento .btn.btn-next{
+  grid-column: 3/4;
+  justify-self: right;
+}
+.evento .btn.btn-next::after{
+  transform: rotate(-90deg);
+}
+.evento input,
+.evento textarea{
   color: var(--blue-300);
   border:0.1rem solid var(--blue-300);
   background: var(--white);
   font-weight: var(--font-medium);
-  font-size: 1.6rem;
+  font-size: 1.5rem;
+  width: 18rem;
+  margin: 0;
+  border-radius: 5rem;
+  padding: 0.9rem 2rem;
 }
-.btn.btn-select.selected{
+/*BTN*/
+.evento .btn.btn-select{
+  color: var(--blue-300);
+  border:0.1rem solid var(--blue-300);
+  background: var(--white);
+  font-weight: var(--font-medium);
+  font-size: 1.5rem;
+  width: 18rem;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+}
+.evento .btn.btn-select.selected{
   background: var(--blue-300);
   color:var(--white);
 }
+
 @media (max-width: 768px) {
   .evento {
     background-size: 100% 29rem, 11rem auto, 12rem auto;

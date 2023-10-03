@@ -335,85 +335,182 @@
       </div>
     </section>
     <section class="evento">
-      <div class="container">
+      <div class="container-fluid">
         <div class="row">
           <form class="event-form">
-            <div class="tab">
-              <h2>Planeje o seu evento</h2>
-              <h3>Para quem será a festa?</h3>
-              <div class="boxes">
-                <div class="box">
-                  <img src="./img/illustration-girl.png" alt="" class="icon-kid" />
-                  <button class="btn btn-unique btn-select" type="button">Menina</button>
-                </div>
-                <div class="box">
-                  <img src="./img/illustration-boy.png" alt="" class="icon-kid" />
-                  <button class="btn btn-unique btn-select" type="button">Menino</button>
-                </div>
-              </div>
-            </div>
-
-            <div class="tab">
-              <h2>Número de crianças convidadas</h2>
-              <div class="boxes">
-                <div class="box">
-                <button class="btn btn-unique btn-select" type="button">Até 15 crianças</button>
-                <button class="btn btn-unique btn-select" type="button">Até 30 crianças</button>
-                <button class="btn btn-unique btn-select" type="button">Até 50 crianças</button>
-                <button class="btn btn-unique btn-select" type="button">Até 75 crianças</button>
-                <button class="btn btn-unique btn-select" type="button">Até 100 crianças</button>
-                </div>
-              </div>
-            </div>
-
-            <div class="tab">
-              <h2>Escolha a Faixa Etária</h2>
-              <h3>Escolha a faixa etária dos convidados</h3>
-              <div class="boxes">
-                <div class="box">
-                  <img src="./img/illustration-girl.png" alt="" class="icon-kid" />
-                  <button class="btn btn-unique btn-select" type="button">0 a 2 anos</button>
-                </div>
-                <div class="box">
-                  <img src="./img/illustration-boy.png" alt="" class="icon-kid" />
-                  <button class="btn btn-unique btn-select" type="button">3 a 5 anos</button>
-                </div>
-                <div class="box">
-                  <img src="./img/illustration-girl.png" alt="" class="icon-kid" />
-                  <button class="btn btn-unique btn-select" type="button">6 a 8 anos</button>
-                </div>
-                <div class="box">
-                  <img src="./img/illustration-boy.png" alt="" class="icon-kid" />
-                  <button class="btn btn-unique btn-select" type="button">9 a 12 anos</button>
-                </div>
-                <div class="box">
-                  <img src="./img/illustration-girl.png" alt="" class="icon-kid" />
-                  <button class="btn btn-unique btn-select" type="button">13 a 15 anos</button>
-                </div>                
-              </div>
-            </div>
-
-            <div class="tab">
-              <h2>Onde acontecerá o evento?</h2>
-              <div class="boxes">
-                <div class="box">
-                  <img src="./img/illustration-boy.png" alt="" class="icon-kid" />
-                  <input type="text"/>
-                </div>
-              </div>
-            </div>
-            <div class="tab">
-              <h2>Escolha o tema da sua festa</h2>
-            </div>
-            <div class="tab">
-              <h2>Quer turbirnar a sua festa? </h2>
-              <h3>Selecione uma ou mais opções abaixo:</h3>
-            </div>
             <button type="button" class="btn btn-prev" onclick="nextPrev(-1)">
-              Voltar
+              Voltar 
             </button>
+            <div class="tabs">
+              <div class="tab">
+                <h2>Planeje o seu evento</h2>
+                <h3>Para quem será a festa?</h3>
+                <div class="boxes">
+                  <div class="box">
+                    <img src="./img/illustration-girl.png" alt="" class="icon-kid" />
+                    <button class="btn btn-unique btn-select" type="button">Menina</button>
+                  </div>
+                  <div class="box">
+                    <img src="./img/illustration-boy.png" alt="" class="icon-kid" />
+                    <button class="btn btn-unique btn-select" type="button">Menino</button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="tab">
+                <h2>Número de crianças convidadas</h2>
+                <div class="boxes">
+                  <div class="box">
+                    <img src="./img/kids-group.png" alt="" class="icon-kids-group" />
+                    <div class="box-buttons">
+                      <button class="btn btn-unique btn-select" type="button">Até 15 crianças</button>
+                      <button class="btn btn-unique btn-select" type="button">Até 30 crianças</button>
+                      <button class="btn btn-unique btn-select" type="button">Até 50 crianças</button>
+                      <button class="btn btn-unique btn-select" type="button">Até 75 crianças</button>
+                      <button class="btn btn-unique btn-select" type="button">Até 100 crianças</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="tab">
+                <h2>Escolha a Faixa Etária</h2>
+                <h3>Escolha a faixa etária dos convidados</h3>
+                <div class="boxes">
+                  <div class="box">
+                    <img src="./img/male-baby.png" alt="" class="icon-kid-growing" />
+                    <button class="btn btn-unique btn-select" type="button">0 a 2 anos</button>
+                  </div>
+                  <div class="box">
+                    <img src="./img/male-kid.png" alt="" class="icon-kid-growing" />
+                    <button class="btn btn-unique btn-select" type="button">3 a 5 anos</button>
+                  </div>
+                  <div class="box">
+                    <img src="./img/male-preteen.png" alt="" class="icon-kid-growing" />
+                    <button class="btn btn-unique btn-select" type="button">6 a 8 anos</button>
+                  </div>
+                  <div class="box">
+                    <img src="./img/male-teenager.png" alt="" class="icon-kid-growing" />
+                    <button class="btn btn-unique btn-select" type="button">9 a 12 anos</button>
+                  </div>
+                  <div class="box">
+                    <img src="./img/male-preadult.png" alt="" class="icon-kid-growing" />
+                    <button class="btn btn-unique btn-select" type="button">13 a 15 anos</button>
+                  </div>                
+                </div>
+              </div>
+
+              <div class="tab">
+                <h2>Escolha a Faixa Etária</h2>
+                <h3>Escolha a faixa etária dos convidados</h3>
+                <div class="boxes">
+                  <div class="box">
+                    <img src="./img/female-baby.png" alt="" class="icon-kid-growing" />
+                    <button class="btn btn-unique btn-select" type="button">0 a 2 anos</button>
+                  </div>
+                  <div class="box">
+                    <img src="./img/female-kid.png" alt="" class="icon-kid-growing" />
+                    <button class="btn btn-unique btn-select" type="button">3 a 5 anos</button>
+                  </div>
+                  <div class="box">
+                    <img src="./img/female-preteen.png" alt="" class="icon-kid-growing" />
+                    <button class="btn btn-unique btn-select" type="button">6 a 8 anos</button>
+                  </div>
+                  <div class="box">
+                    <img src="./img/female-teenager.png" alt="" class="icon-kid-growing" />
+                    <button class="btn btn-unique btn-select" type="button">9 a 12 anos</button>
+                  </div>
+                  <div class="box">
+                    <img src="./img/female-preadult.png" alt="" class="icon-kid-growing" />
+                    <button class="btn btn-unique btn-select" type="button">13 a 15 anos</button>
+                  </div>                
+                </div>
+              </div>
+
+              <div class="tab">
+                <h2>Onde acontecerá o evento?</h2>
+                <div class="boxes">
+                  <div class="box">
+                    <img src="./img/buildings-2.png" alt="" class="icon-city" />
+                    <input name="" type="text" placeholder="Digite aqui o bairro ou região..."/>
+                  </div>
+                </div>
+              </div>
+
+              <div class="tab">
+                <h2>Escolha o tema da sua festa</h2>
+                <div class="boxes">
+                  <div class="box">
+                    <img src="./img/kids-group-2.png" alt="" class="icon-kids-group-2" />
+                    <div class="box-buttons">
+                      <button class="btn btn-unique btn-select" type="button">Princesas</button>
+                      <button class="btn btn-unique btn-select" type="button">Super-heróis</button>
+                      <button class="btn btn-unique btn-select" type="button">Futebol</button>
+                      <button class="btn btn-unique btn-select" type="button">Fundo do Mar</button>
+                      <button class="btn btn-unique btn-select" type="button">Safari</button>
+                      <button class="btn btn-unique btn-select" type="button">Unicórnio</button>
+                      <button class="btn btn-unique btn-select" type="button">Piratas</button>
+                      <button class="btn btn-unique btn-select" type="button">Outros</button>
+                      <button class="btn btn-unique btn-select" type="button">Não sei ainda</button>
+                      <button class="btn btn-unique btn-select" type="button">Não específico</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="tab">
+                <h2>Quer turbirnar a sua festa? </h2>
+                <h3>Selecione uma ou mais opções abaixo:</h3>
+                <div class="boxes">
+                  <div class="box">
+                  <img src="./img/kids-group-3.png" alt="" class="icon-kids-group-3" />
+                    <div class="box-buttons">
+                      <button class="btn btn-multiple btn-select" type="button">Oficinas</button>
+                      <button class="btn btn-multiple btn-select" type="button">Esculturas de balão</button>
+                      <button class="btn btn-multiple btn-select" type="button">Pintura Facial</button>
+                      <button class="btn btn-multiple btn-select" type="button">Camarin Fashion</button>
+                      <button class="btn btn-multiple btn-select" type="button">Show Mágico</button>
+                      <button class="btn btn-multiple btn-select" type="button">Teatro Lúdico</button>
+                      <button class="btn btn-multiple btn-select" type="button">Combo Nerf</button>
+                      <button class="btn btn-multiple btn-select" type="button">Festa do Pijama</button>
+                      <button class="btn btn-multiple btn-select" type="button">Personagens</button>
+                      <button class="btn btn-multiple btn-select" type="button">Kids & Teen Disco</button>
+                      <button class="btn btn-multiple btn-select" type="button">Acampamento</button>
+                      <button class="btn btn-multiple btn-select" type="button">Brinquedos Infláveis</button>
+                      <!-- <button class="btn btn-unique btn-select" type="button">Não quero</button> -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="tab">
+                <h2>Informações para receber seu 
+                  orçamento personalizado!
+                </h2>
+                <h3> Retornaremos em até 24 horas, de segunda a sexta-feira 
+                  O orçamento é completamente gratuito e não implica compromisso algum.
+                </h3>
+                <div class="boxes">
+                  <div class="box">
+                    <input type="text" name="" placeholder="Nome da Pessoa Responsável do Evento">
+                    <input type="text" name="" placeholder="Nome do(a) Aniversáriante">
+                    <input type="text" name="" placeholder="Data de Aniversário">
+                    <input type="text" name="" placeholder="Seu Melhor Email">
+                    <input type="text" name="" placeholder="Telefone para Contato">
+                  </div>
+                  <div class="box">
+                    <input type="text" name="" placeholder="Data Prevista do evento">
+                    <textarea name="" placeholder="Mensagem"></textarea>
+                    <p>Vamos manter os seus dados só enquanto assim o pretender. Ficarão sempre em segurança e 
+                      a qualquer momento pode deixar de receber as nossas mensagens ou editar os seus dados. 
+                      Termos e Condições
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
             <button type="button" class="btn btn-next" onclick="nextPrev(1)">
-              Avançar
+              Avançar 
             </button>
 
           </form>
