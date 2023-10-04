@@ -15,12 +15,12 @@
   color: var(--blue-100);
   text-align: center;
 }
-.evento .event-form{
+.evento .tab{
   display: grid;
   grid-template-columns: 14rem calc(100% - 28rem) 14rem;
   max-width: 100%;
 }
-.evento .tabs{
+.evento .tab-container{
   grid-column: 2/3;
 }
 .evento .tab {
@@ -81,7 +81,7 @@ width: 65%;
   color: var(--blue-300);
   font-weight: var(--font-semi-bold);
   align-self: center;
-  display: flex;
+  display: none;
   align-items: center;
   gap: 0.5rem;
 }
