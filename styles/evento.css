@@ -1,32 +1,32 @@
-.evento{
+.evento {
   padding: 5rem 0 8rem 0;
-  background: url(../img/grass.png),url(../img/ballon-3.png),url(../img/kite.png);
+  background: url(../img/grass.png), url(../img/ballon-3.png), url(../img/kite.png);
   background-repeat: no-repeat;
   background-size: 100% 29rem, 14rem auto, 16rem auto;
   background-position: bottom left, right 3rem, left 3rem;
 }
-.evento h2{
+.evento h2 {
   color: var(--blue-100);
   text-align: center;
   margin-bottom: 1rem;
 }
-.evento h3{
+.evento h3 {
   font-weight: var(--font-medium);
   color: var(--blue-100);
   text-align: center;
 }
-.evento .tab{
+.evento .tab {
   display: grid;
   grid-template-columns: 14rem calc(100% - 28rem) 14rem;
   max-width: 100%;
 }
-.evento .tab-container{
+.evento .tab-container {
   grid-column: 2/3;
 }
 .evento .tab {
   display: none;
 }
-.evento .boxes{
+.evento .boxes {
   padding: 5rem 0;
   display: flex;
   flex-wrap: wrap;
@@ -35,58 +35,57 @@
   gap: 3rem;
 }
 .evento .box {
- display: flex;
- flex-direction: column;
- align-items: center;
- gap: 2rem; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
 }
-.evento .box .icon-kid{
+.evento .box .icon-kid {
   height: 25rem;
 }
-.evento .box .icon-kids-group{
-width: 65%;
+.evento .box .icon-kids-group {
+  width: 65%;
 }
-.evento .box:nth-child(1)  .icon-kid-growing{
+.evento .box:nth-child(1) .icon-kid-growing {
   height: 11rem;
 }
-.evento .box:nth-child(2)  .icon-kid-growing{
+.evento .box:nth-child(2) .icon-kid-growing {
   height: 17rem;
 }
-.evento .box:nth-child(3)  .icon-kid-growing{
+.evento .box:nth-child(3) .icon-kid-growing {
   height: 21rem;
 }
-.evento .box:nth-child(4)  .icon-kid-growing{
+.evento .box:nth-child(4) .icon-kid-growing {
   height: 24rem;
 }
-.evento .box:nth-child(5)  .icon-kid-growing{
+.evento .box:nth-child(5) .icon-kid-growing {
   height: 25rem;
 }
-.evento .box .icon-city{
+.evento .box .icon-city {
   width: 65%;
 }
 .evento .icon-kids-group-2 {
-    width: 65%;
+  width: 65%;
 }
 .evento .icon-kids-group-3 {
   width: 65%;
 }
-.evento .box .box-buttons{
+.evento .box .box-buttons {
   display: flex;
   gap: 3rem;
   justify-content: center;
   flex-wrap: wrap;
 }
 .evento .btn.btn-prev,
-.evento .btn.btn-next{
+.evento .btn.btn-next {
   color: var(--blue-300);
   font-weight: var(--font-semi-bold);
   align-self: center;
-  display: none;
   align-items: center;
   gap: 0.5rem;
 }
 .evento .btn.btn-prev::before,
-.evento .btn.btn-next::after{
+.evento .btn.btn-next::after {
   content: '';
   background-color: var(--blue-100);
   background-image: url('../img/arrow.png');
@@ -98,24 +97,26 @@ width: 65%;
   border-radius: 100%;
 }
 
-.evento .btn.btn-prev{
+.evento .btn.btn-prev {
   grid-column: 1/2;
   justify-self: left;
+  display: flex;
 }
-.evento .btn.btn-prev::before{
+.evento .btn.btn-prev::before {
   transform: rotate(90deg);
 }
-.evento .btn.btn-next{
+.evento .btn.btn-next {
   grid-column: 3/4;
   justify-self: right;
+  display: none;
 }
-.evento .btn.btn-next::after{
+.evento .btn.btn-next::after {
   transform: rotate(-90deg);
 }
 .evento input,
-.evento textarea{
+.evento textarea {
   color: var(--blue-300);
-  border:0.1rem solid var(--blue-300);
+  border: 0.1rem solid var(--blue-300);
   background: var(--white);
   font-weight: var(--font-medium);
   font-size: 1.5rem;
@@ -125,9 +126,9 @@ width: 65%;
   padding: 0.9rem 2rem;
 }
 /*BTN*/
-.evento .btn.btn-select{
+.evento .btn.btn-select {
   color: var(--blue-300);
-  border:0.1rem solid var(--blue-300);
+  border: 0.1rem solid var(--blue-300);
   background: var(--white);
   font-weight: var(--font-medium);
   font-size: 1.5rem;
@@ -136,9 +137,9 @@ width: 65%;
   justify-content: center;
   margin: 0;
 }
-.evento .btn.btn-select.selected{
+.evento .btn.btn-select.selected {
   background: var(--blue-300);
-  color:var(--white);
+  color: var(--white);
 }
 
 @media (max-width: 768px) {
@@ -148,20 +149,20 @@ width: 65%;
 }
 @media (max-width: 576px) {
   .evento {
-    padding: 5rem 0 0 0 ;
+    padding: 5rem 0 0 0;
     background-size: 140% 15rem, 8rem auto, 8rem auto;
     background-position: bottom center, right 12rem, left 13rem;
-}
+  }
   .evento .boxes {
     gap: 4rem;
-}
-.evento .box {
-  gap: 1rem;
-}
-.evento .box .icon-kid {
-  height: 20rem;
-}
-  .evento button{
+  }
+  .evento .box {
+    gap: 1rem;
+  }
+  .evento .box .icon-kid {
+    height: 20rem;
+  }
+  .evento button {
     font-size: 1.5rem;
   }
 }

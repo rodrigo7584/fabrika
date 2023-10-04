@@ -123,17 +123,15 @@ const tabFinish = document.querySelector('#tab-finish')
 
 const btnNextTabChooseGender = document.querySelector('.btn-next-tab-gender')
 const btnNextNumberOfGuests = document.querySelector('.btn-next-tab-guests')
-const btnNextGenderFemale = document.querySelector(
-  '.btn-next-tab-gender-female'
-)
+const btnNextGenderFemale = document.querySelector('.btn-next-tab-gender-female')
 const btnNextGenderMale = document.querySelector('.btn-next-tab-gender-male')
 const btnNextWhere = document.querySelector('.btn-next-tab-where')
 const btnNextTheme = document.querySelector('.btn-next-tab-theme')
 const btnNextMoreOptions = document.querySelector('.btn-next-more-options')
 
 const btnPrevNumberOfGuests = document.querySelector('.btn-prev-tab-guests')
-const btnPrevGenderFemale = document.querySelector('.btn-prev-tab-gender-male')
-const btnPrevGenderMale = document.querySelector('.btn-prev-tab-gender-female')
+const btnPrevGenderFemale = document.querySelector('.btn-prev-tab-gender-female')
+const btnPrevGenderMale = document.querySelector('.btn-prev-tab-gender-male')
 const btnPrevWhere = document.querySelector('.btn-prev-tab-where')
 const btnPrevTheme = document.querySelector('.btn-prev-tab-theme')
 const btnPrevMoreOptions = document.querySelector('.btn-prev-more-options')
@@ -156,7 +154,6 @@ btnsTabChooseGender.forEach(btn => {
 btnNextTabChooseGender.addEventListener('click', () => {
   tabChooseGender.style.display = 'none'
   tabNumberOfGuests.style.display = 'grid'
-  btnPrevNumberOfGuests.style.display = 'flex'
 })
 
 btnPrevNumberOfGuests.addEventListener('click', () => {
@@ -174,14 +171,10 @@ btnsNumberOfGuests.forEach(btn => {
 
 btnNextNumberOfGuests.addEventListener('click', () => {
   tabNumberOfGuests.style.display = 'none'
-  btnPrevNumberOfGuests.style.display = 'none'
-  btnNextNumberOfGuests.style.display = 'none'
   if (genderChosen == 'Menina') {
-    tabGenderFemale.style.display = 'block'
-    btnPrevGenderFemale.style.display = 'flex'
+    tabGenderFemale.style.display = 'grid'
   } else {
-    tabGenderMale.style.display = 'block'
-    btnPrevGenderMale.style.display = 'flex'
+    tabGenderMale.style.display = 'grid'
   }
 })
 
@@ -194,12 +187,8 @@ btnsGenderFemale.forEach(btn => {
 })
 
 btnPrevGenderFemale.addEventListener('click', () => {
-  tabNumberOfGuests.style.display = 'block'
   tabGenderFemale.style.display = 'none'
-  btnNextNumberOfGuests.style.display = 'flex'
-  btnPrevNumberOfGuests.style.display = 'flex'
-  btnPrevGenderFemale.style.display = 'none'
-  btnNextGenderMale.style.display = 'none'
+  tabNumberOfGuests.style.display = 'grid'
 })
 
 const btnsGenderMale = tabGenderMale.querySelectorAll('.btn-unique')
@@ -211,11 +200,9 @@ btnsGenderMale.forEach(btn => {
 })
 
 btnPrevGenderMale.addEventListener('click', () => {
-  tabNumberOfGuests.style.display = 'block'
+  tabNumberOfGuests.style.display = 'grid'
   tabGenderMale.style.display = 'none'
-  btnNextNumberOfGuests.style.display = 'flex'
-  btnPrevNumberOfGuests.style.display = 'flex'
-  btnPrevGenderMale.style.display = 'none'
+  console.log('tetse')
 })
 
 tabs.forEach(tab => {
