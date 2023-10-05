@@ -465,7 +465,7 @@
                   <div class="boxes">
                     <div class="box">
                       <img src="./img/buildings-2.png" alt="" class="icon-city" />
-                      <input name="" type="text" placeholder="Digite aqui o bairro ou região..."/>
+                      <input name="local" type="text" placeholder="Digite aqui o bairro ou região..."/>
                     </div>
                   </div>
                 </div>
@@ -544,25 +544,25 @@
                   <h2>Informações para receber seu 
                     orçamento personalizado!
                   </h2>
-                  <h3> Retornaremos em até 24 horas, de segunda a sexta-feira 
+                  <h3> Retornaremos em até 24 horas, de segunda a sexta-feira. <br>
                     O orçamento é completamente gratuito e não implica compromisso algum.
                   </h3>
                   <div class="boxes">
                     <div class="box">
-                      <input type="text" name="" placeholder="Nome da Pessoa Responsável do Evento">
-                      <input type="text" name="" placeholder="Nome do(a) Aniversáriante">
-                      <input type="text" name="" placeholder="Data de Aniversário">
-                      <input type="text" name="" placeholder="Seu Melhor Email">
-                      <input type="text" name="" placeholder="Telefone para Contato">
+                      <input type="text" name="responsavel" placeholder="Nome da Pessoa Responsável do Evento" >
+                      <input type="text" name="aniversariante" placeholder="Nome do(a) Aniversáriante" >
+                      <input type="text" name="aniversario" placeholder="Data de Aniversário" >
+                      <input type="text" name="email" placeholder="Seu Melhor Email" >
+                      <input type="text" name="telefone" placeholder="Telefone para Contato" >
                     </div>
                     <div class="box">
-                      <input type="text" name="" placeholder="Data Prevista do evento">
-                      <textarea name="" placeholder="Mensagem"></textarea>
-                      <p>Vamos manter os seus dados só enquanto assim o pretender. Ficarão sempre em segurança e 
+                      <input type="text" name="data" placeholder="Data Prevista do evento">
+                      <textarea name="mensagem" placeholder="Mensagem"></textarea>
+                      <!-- <p>Vamos manter os seus dados só enquanto assim o pretender. Ficarão sempre em segurança e 
                         a qualquer momento pode deixar de receber as nossas mensagens ou editar os seus dados. 
                         Termos e Condições
-                      </p>
-                      <button type="button" onclick="initConstructEmail()"></button>
+                      </p> -->
+                      <button type="button" class="btn btn-blue btn-send-event-form" onclick="initConstructEmail()">Enviar</button>
                     </div>
                   </div>
                 </div>

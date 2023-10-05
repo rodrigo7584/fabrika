@@ -123,21 +123,26 @@ const tabFinish = document.querySelector('#tab-finish')
 
 const btnNextTabChooseGender = document.querySelector('.btn-next-tab-gender')
 const btnNextNumberOfGuests = document.querySelector('.btn-next-tab-guests')
-const btnNextGenderFemale = document.querySelector('.btn-next-tab-gender-female')
+const btnNextGenderFemale = document.querySelector(
+  '.btn-next-tab-gender-female'
+)
 const btnNextGenderMale = document.querySelector('.btn-next-tab-gender-male')
 const btnNextWhere = document.querySelector('.btn-next-tab-where')
 const btnNextTheme = document.querySelector('.btn-next-tab-theme')
 const btnNextMoreOptions = document.querySelector('.btn-next-more-options')
 
 const btnPrevNumberOfGuests = document.querySelector('.btn-prev-tab-guests')
-const btnPrevGenderFemale = document.querySelector('.btn-prev-tab-gender-female')
+const btnPrevGenderFemale = document.querySelector(
+  '.btn-prev-tab-gender-female'
+)
 const btnPrevGenderMale = document.querySelector('.btn-prev-tab-gender-male')
 const btnPrevWhere = document.querySelector('.btn-prev-tab-where')
 const btnPrevTheme = document.querySelector('.btn-prev-tab-theme')
 const btnPrevMoreOptions = document.querySelector('.btn-prev-more-options')
 const btnPrevFinish = document.querySelector('.btn-prev-finish')
 
-let currentTab = tabChooseGender
+const btnSendEventForm = document.querySelector('.btn-send-event-form')
+
 let genderChosen = ''
 
 tabChooseGender.style.display = 'grid'
@@ -191,6 +196,11 @@ btnPrevGenderFemale.addEventListener('click', () => {
   tabNumberOfGuests.style.display = 'grid'
 })
 
+btnNextGenderFemale.addEventListener('click', () => {
+  tabGenderFemale.style.display = 'none'
+  tabWhere.style.display = 'grid'
+})
+
 const btnsGenderMale = tabGenderMale.querySelectorAll('.btn-unique')
 
 btnsGenderMale.forEach(btn => {
@@ -202,7 +212,91 @@ btnsGenderMale.forEach(btn => {
 btnPrevGenderMale.addEventListener('click', () => {
   tabNumberOfGuests.style.display = 'grid'
   tabGenderMale.style.display = 'none'
-  console.log('tetse')
+})
+
+btnNextGenderMale.addEventListener('click', () => {
+  tabGenderMale.style.display = 'none'
+  tabWhere.style.display = 'grid'
+})
+
+const inputTabWhere = tabWhere.querySelector('input')
+
+inputTabWhere.addEventListener('input', () => {
+  if (inputTabWhere.value.length >= 5) {
+    btnNextWhere.style.display = 'flex'
+  } else {
+    btnNextWhere.style.display = 'none'
+  }
+})
+
+btnPrevWhere.addEventListener('click', () => {
+  if (genderChosen == 'Menina') {
+    tabGenderFemale.style.display = 'grid'
+  } else {
+    tabGenderMale.style.display = 'grid'
+  }
+  tabWhere.style.display = 'none'
+})
+
+btnNextWhere.addEventListener('click', () => {
+  tabTheme.style.display = 'grid'
+  tabWhere.style.display = 'none'
+})
+
+const btnsTabTheme = tabTheme.querySelectorAll('.btn-unique')
+
+btnsTabTheme.forEach(btn => {
+  btn.addEventListener('click', () => {
+    btnNextTheme.style.display = 'flex'
+  })
+})
+
+btnPrevTheme.addEventListener('click', () => {
+  tabWhere.style.display = 'grid'
+  tabTheme.style.display = 'none'
+})
+
+btnNextTheme.addEventListener('click', () => {
+  tabMoreOptions.style.display = 'grid'
+  tabTheme.style.display = 'none'
+})
+
+btnNextMoreOptions.style.display = 'flex'
+
+btnNextMoreOptions.addEventListener('click', () => {
+  tabMoreOptions.style.display = 'none'
+  tabFinish.style.display = 'grid'
+})
+
+btnPrevMoreOptions.addEventListener('click', () => {
+  tabMoreOptions.style.display = 'none'
+  tabTheme.style.display = 'grid'
+})
+
+const inputsTabFinish = tabFinish.querySelectorAll('input')
+let auxCheckerInputsTabFinish = [0]
+
+function checkerInputsTabFinish() {
+  if (
+    auxCheckerInputsTabFinish.length == inputsTabFinish.length &&
+    auxCheckerInputsTabFinish.every(field => field === true)
+  ) {
+    btnSendEventForm.style.display = 'flex'
+  } else {
+    btnSendEventForm.style.display = 'none'
+  }
+}
+
+inputsTabFinish.forEach((input, i) => {
+  input.addEventListener('input', () => {
+    if (input.value.length >= 1) {
+      auxCheckerInputsTabFinish[i] = true
+      checkerInputsTabFinish()
+    } else {
+      auxCheckerInputsTabFinish[i] = false
+      checkerInputsTabFinish()
+    }
+  })
 })
 
 tabs.forEach(tab => {
@@ -226,3 +320,60 @@ tabs.forEach(tab => {
     })
   })
 })
+
+function recoverInfos(tab) {
+  const buttonSelected = tab.querySelectorAll('.btn.selected')
+  const inputs = tab.querySelectorAll('input')
+  const messages = tab.querySelectorAll('textarea')
+  let info = ''
+  buttonSelected.forEach(button => {
+    info += (' ', button.innerHTML)
+  })
+  inputs.forEach(input => {
+    info += `${input.getAttribute('name')}: ${input.value}, `
+  })
+  messages.forEach(message => {
+    info += `Mensagem: ${message.value}.`
+  })
+  return info
+}
+
+function initConstructEmail() {
+  let mailBody = `
+  A festa sera para:
+  ${recoverInfos(tabs[0])} 
+  Número de crianças:
+  ${recoverInfos(tabs[1])} 
+  Faixa etária:
+  ${genderChosen == 'menina' ? recoverInfos(tabs[2]) : recoverInfos(tabs[3])}
+  Evento ocorerrá: 
+  ${recoverInfos(tabs[4])}
+  O tema será: 
+  ${recoverInfos(tabs[5])}
+  Os turbos: 
+  ${recoverInfos(tabs[6])}
+  Informações de contato:
+  ${recoverInfos(tabs[7])}
+  `
+
+  console.log(mailBody)
+  enviar(mailBody)
+}
+
+function enviar(mailBody) {
+  fetch('https://formsubmit.co/ajax/rodrigo.gandhi.oliveira@gmail.com', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+      Accept: 'application/json'
+    },
+    body: JSON.stringify({
+      subject: 'teste',
+      name: 'FormSubmit',
+      message: mailBody
+    })
+  })
+    .then(response => response.json())
+    .then(data => console.log(data))
+    .catch(error => console.log(error))
+}
