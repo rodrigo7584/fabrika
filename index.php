@@ -339,7 +339,7 @@
         <div class="row">
           <form class="event-form">
             <!-- <button type="button" class="btn btn-prev" onclick="nextPrev(-1)">
-              Voltar 
+              <span>Voltar</span> 
             </button> -->
             <div class="tabs">
               <div class="tab tab-gender" id="tab-gender">
@@ -358,13 +358,13 @@
                   </div>
                 </div>
                 <button type="button" class="btn btn-next btn-next-tab-gender">
-                  Avançar 
+                 <span>Avançar</span>
                 </button>
               </div>
              
               <div class="tab" id="tab-guests">
                 <button type="button" class="btn btn-prev btn-prev-tab-guests">
-                  Voltar
+                  <span>Voltar</span>
                 </button>
                 <div class="tab-container">
                   <h2>Número de crianças convidadas</h2>
@@ -382,13 +382,13 @@
                   </div>
                 </div>
                 <button type="button" class="btn btn-next btn-next-tab-guests">
-                  Avançar 
+                  <span>Avançar</span>
                 </button>
               </div>
 
               <div class="tab" id="tab-gender-male">
                 <button type="button" class="btn btn-prev btn-prev-tab-gender-male">
-                  Voltar
+                  <span>Voltar</span>
                 </button>
                 <div class="tab-container">
                   <h2>Escolha a Faixa Etária</h2>
@@ -417,13 +417,13 @@
                   </div>
                 </div>
                 <button type="button" class="btn btn-next btn-next-tab-gender-male">
-                  Avançar 
+                  <span>Avançar</span>
                 </button>
               </div>
 
               <div class="tab" id="tab-gender-female">
                 <button type="button" class="btn btn-prev btn-prev-tab-gender-female">
-                  Voltar
+                  <span>Voltar</span>
                 </button>
                 <div class="tab-container">
                   <h2>Escolha a Faixa Etária</h2>
@@ -452,13 +452,13 @@
                   </div>
                 </div>
                 <button type="button" class="btn btn-next btn-next-tab-gender-female">
-                  Avançar 
+                  <span>Avançar</span>
                 </button>
               </div>
 
               <div class="tab" id="tab-where">
                 <button type="button" class="btn btn-prev btn-prev-tab-where">
-                  Voltar
+                  <span>Voltar</span>
                 </button>
                 <div class="tab-container">
                   <h2>Onde acontecerá o evento?</h2>
@@ -470,13 +470,13 @@
                   </div>
                 </div>
                 <button type="button" class="btn btn-next btn-next-tab-where">
-                  Avançar 
+                  <span>Avançar</span>
                 </button>
               </div>
 
               <div class="tab" id="tab-theme">
                 <button type="button" class="btn btn-prev btn-prev-tab-theme">
-                  Voltar
+                  <span>Voltar</span>
                 </button>
                 <div class="tab-container">
                   <h2>Escolha o tema da sua festa</h2>
@@ -499,13 +499,13 @@
                   </div>
                 </div>
                 <button type="button" class="btn btn-next btn-next-tab-theme">
-                  Avançar 
+                  <span>Avançar</span>
                 </button>
               </div>
 
               <div class="tab" id="tab-more-options">
                 <button type="button" class="btn btn-prev btn-prev-more-options">
-                  Voltar
+                  <span>Voltar</span>
                 </button>
                 <div class="tab-container">
                   <h2>Quer turbirnar a sua festa? </h2>
@@ -532,13 +532,13 @@
                   </div>
                 </div>
                 <button type="button" class="btn btn-next btn-next-more-options">
-                  Avançar 
+                  <span>Avançar</span>
                 </button>
               </div>
               
               <div class="tab" id="tab-finish">
                 <button type="button" class="btn btn-prev btn-prev-finish">
-                  Voltar
+                  <span>Voltar</span>
                 </button>
                 <div class="tab-container"> 
                   <h2>Informações para receber seu 
@@ -569,7 +569,7 @@
               </div>
             </div>
             <!-- <button type="button" class="btn btn-next" onclick="nextPrev(1)">
-              Avançar 
+              <span>Avançar</span>
             </button> -->
           </form>
           

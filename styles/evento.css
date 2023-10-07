@@ -155,6 +155,10 @@
   height: 15rem;
   border-radius: 2rem;
 }
+.evento #tab-gender-male .btn-select,
+.evento #tab-gender-female .btn-select {
+  width: 15rem;
+}
 /*BTN*/
 .evento .btn.btn-select {
   color: var(--blue-300);
@@ -174,9 +178,59 @@
 .evento .btn-send-event-form {
   display: none;
 }
+@media (max-width: 1200px) {
+  .evento #tab-gender-male .btn-select,
+  .evento #tab-gender-female .btn-select {
+    width: 21rem;
+  }
+}
+@media (max-width: 992px) {
+  .evento .tab {
+    grid-template-columns: 3rem calc(100% - 7rem) 3rem;
+    gap: 0.5rem;
+  }
+  .evento #tab-gender-male .btn-select,
+  .evento #tab-gender-female .btn-select {
+    width: 20rem;
+  }
+  .evento .btn-next,
+  .evento .btn-prev {
+    padding: 0;
+  }
+  .evento .btn-next span,
+  .evento .btn-prev span {
+    display: none;
+  }
+}
 @media (max-width: 768px) {
   .evento {
     background-size: 100% 29rem, 11rem auto, 12rem auto;
+  }
+  .evento .box .icon-kid {
+    height: 20rem;
+  }
+  .evento .box .box-buttons,
+  .evento .boxes {
+    gap: 1rem;
+  }
+  .evento #tab-gender-male .btn-select,
+  .evento #tab-gender-female .btn-select {
+    width: 15rem;
+  }
+  .evento .box:nth-child(1) .icon-kid-growing {
+    height: 8rem;
+  }
+  .evento .box:nth-child(2) .icon-kid-growing {
+    height: 12rem;
+  }
+  .evento .box:nth-child(3) .icon-kid-growing {
+    height: 13rem;
+  }
+  .evento .box:nth-child(4) .icon-kid-growing {
+    height: 14rem;
+  }
+  .evento .box:nth-child(5) .icon-kid-growing {
+    height: 15rem;
   }
 }
 @media (max-width: 576px) {
@@ -185,8 +239,21 @@
     background-size: 140% 15rem, 8rem auto, 8rem auto;
     background-position: bottom center, right 12rem, left 13rem;
   }
+  .evento #tab-gender-male .btn-select,
+  .evento #tab-gender-female .btn-select {
+    width: 13rem;
+  }
+  .evento .box .icon-kids-group {
+    width: 95%;
+  }
+  .evento .icon-kids-group-2 {
+    width: 95%;
+  }
+  .evento .icon-kids-group-3 {
+    width: 95%;
+  }
   .evento .boxes {
-    gap: 4rem;
+    gap: 1rem;
   }
   .evento .box {
     gap: 1rem;
@@ -196,5 +263,11 @@
   }
   .evento button {
     font-size: 1.5rem;
+  }
+  .evento .tab-gender .btn-select {
+    width: 15rem;
+  }
+  .evento #tab-finish .box {
+    width: 100%;
   }
 }
