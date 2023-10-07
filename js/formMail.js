@@ -123,18 +123,14 @@ const tabFinish = document.querySelector('#tab-finish')
 
 const btnNextTabChooseGender = document.querySelector('.btn-next-tab-gender')
 const btnNextNumberOfGuests = document.querySelector('.btn-next-tab-guests')
-const btnNextGenderFemale = document.querySelector(
-  '.btn-next-tab-gender-female'
-)
+const btnNextGenderFemale = document.querySelector('.btn-next-tab-gender-female')
 const btnNextGenderMale = document.querySelector('.btn-next-tab-gender-male')
 const btnNextWhere = document.querySelector('.btn-next-tab-where')
 const btnNextTheme = document.querySelector('.btn-next-tab-theme')
 const btnNextMoreOptions = document.querySelector('.btn-next-more-options')
 
 const btnPrevNumberOfGuests = document.querySelector('.btn-prev-tab-guests')
-const btnPrevGenderFemale = document.querySelector(
-  '.btn-prev-tab-gender-female'
-)
+const btnPrevGenderFemale = document.querySelector('.btn-prev-tab-gender-female')
 const btnPrevGenderMale = document.querySelector('.btn-prev-tab-gender-male')
 const btnPrevWhere = document.querySelector('.btn-prev-tab-where')
 const btnPrevTheme = document.querySelector('.btn-prev-tab-theme')
@@ -145,41 +141,41 @@ const btnSendEventForm = document.querySelector('.btn-send-event-form')
 
 let genderChosen = ''
 
-tabChooseGender.style.display = 'grid'
+hideShow(tabChooseGender, 'grid', 'show')
 
 const btnsTabChooseGender = tabChooseGender.querySelectorAll('.btn-unique')
 
 btnsTabChooseGender.forEach(btn => {
   btn.addEventListener('click', () => {
     genderChosen = btn.innerHTML
-    btnNextTabChooseGender.style.display = 'flex'
+    hideShow(btnNextTabChooseGender, 'flex', 'show')
   })
 })
 
 btnNextTabChooseGender.addEventListener('click', () => {
-  tabChooseGender.style.display = 'none'
-  tabNumberOfGuests.style.display = 'grid'
+  hideShow(tabChooseGender, 'none')
+  hideShow(tabNumberOfGuests, 'grid', 'show')
 })
 
 btnPrevNumberOfGuests.addEventListener('click', () => {
-  tabChooseGender.style.display = 'grid'
-  tabNumberOfGuests.style.display = 'none'
+  hideShow(tabNumberOfGuests, 'none')
+  hideShow(tabChooseGender, 'grid', 'show')
 })
 
 const btnsNumberOfGuests = tabNumberOfGuests.querySelectorAll('.btn-unique')
 
 btnsNumberOfGuests.forEach(btn => {
   btn.addEventListener('click', () => {
-    btnNextNumberOfGuests.style.display = 'flex'
+    hideShow(btnNextNumberOfGuests, 'flex', 'show')
   })
 })
 
 btnNextNumberOfGuests.addEventListener('click', () => {
-  tabNumberOfGuests.style.display = 'none'
+  hideShow(tabNumberOfGuests, 'none')
   if (genderChosen == 'Menina') {
-    tabGenderFemale.style.display = 'grid'
+    hideShow(tabGenderFemale, 'grid', 'show')
   } else {
-    tabGenderMale.style.display = 'grid'
+    hideShow(tabGenderMale, 'grid', 'show')
   }
 })
 
@@ -187,103 +183,108 @@ const btnsGenderFemale = tabGenderFemale.querySelectorAll('.btn-unique')
 
 btnsGenderFemale.forEach(btn => {
   btn.addEventListener('click', () => {
-    btnNextGenderFemale.style.display = 'flex'
+    hideShow(btnNextGenderFemale, 'flex', 'show')
   })
 })
 
 btnPrevGenderFemale.addEventListener('click', () => {
-  tabGenderFemale.style.display = 'none'
-  tabNumberOfGuests.style.display = 'grid'
+  hideShow(tabGenderFemale, 'none')
+  hideShow(tabNumberOfGuests, 'grid', 'show')
 })
 
 btnNextGenderFemale.addEventListener('click', () => {
-  tabGenderFemale.style.display = 'none'
-  tabWhere.style.display = 'grid'
+  hideShow(tabGenderFemale, 'none')
+  hideShow(tabWhere, 'grid', 'show')
 })
 
 const btnsGenderMale = tabGenderMale.querySelectorAll('.btn-unique')
 
 btnsGenderMale.forEach(btn => {
   btn.addEventListener('click', () => {
-    btnNextGenderMale.style.display = 'flex'
+    hideShow(btnNextGenderMale, 'flex', 'show')
   })
 })
 
 btnPrevGenderMale.addEventListener('click', () => {
-  tabNumberOfGuests.style.display = 'grid'
-  tabGenderMale.style.display = 'none'
+  hideShow(tabNumberOfGuests, 'grid', 'show')
+  hideShow(tabGenderMale, 'none')
 })
 
 btnNextGenderMale.addEventListener('click', () => {
-  tabGenderMale.style.display = 'none'
-  tabWhere.style.display = 'grid'
+  hideShow(tabGenderMale, 'none')
+  hideShow(tabWhere, 'grid', 'show')
 })
 
 const inputTabWhere = tabWhere.querySelector('input')
 
 inputTabWhere.addEventListener('input', () => {
   if (inputTabWhere.value.length >= 5) {
-    btnNextWhere.style.display = 'flex'
+    hideShow(btnNextWhere, 'flex', 'show')
   } else {
-    btnNextWhere.style.display = 'none'
+    hideShow(btnNextWhere, 'none')
   }
 })
 
 btnPrevWhere.addEventListener('click', () => {
   if (genderChosen == 'Menina') {
-    tabGenderFemale.style.display = 'grid'
+    hideShow(tabGenderFemale, 'grid', 'show')
   } else {
-    tabGenderMale.style.display = 'grid'
+    hideShow(tabGenderMale, 'grid', 'show')
   }
-  tabWhere.style.display = 'none'
+  hideShow(tabWhere, 'none')
 })
 
 btnNextWhere.addEventListener('click', () => {
-  tabTheme.style.display = 'grid'
-  tabWhere.style.display = 'none'
+  hideShow(tabTheme, 'grid', 'show')
+  hideShow(tabWhere, 'none')
 })
 
 const btnsTabTheme = tabTheme.querySelectorAll('.btn-unique')
 
 btnsTabTheme.forEach(btn => {
   btn.addEventListener('click', () => {
-    btnNextTheme.style.display = 'flex'
+    hideShow(btnNextTheme, 'flex')
   })
 })
 
 btnPrevTheme.addEventListener('click', () => {
-  tabWhere.style.display = 'grid'
-  tabTheme.style.display = 'none'
+  hideShow(tabWhere, 'grid', 'show')
+  hideShow(tabTheme, 'none')
 })
 
 btnNextTheme.addEventListener('click', () => {
-  tabMoreOptions.style.display = 'grid'
-  tabTheme.style.display = 'none'
+  hideShow(tabMoreOptions, 'grid', 'show')
+  hideShow(tabTheme, 'none')
 })
 
 btnNextMoreOptions.style.display = 'flex'
 
 btnNextMoreOptions.addEventListener('click', () => {
-  tabMoreOptions.style.display = 'none'
-  tabFinish.style.display = 'grid'
+  hideShow(tabMoreOptions, 'none')
+  hideShow(tabFinish, 'grid', 'show')
 })
 
 btnPrevMoreOptions.addEventListener('click', () => {
-  tabMoreOptions.style.display = 'none'
-  tabTheme.style.display = 'grid'
+  hideShow(tabMoreOptions, 'none')
+  hideShow(tabTheme, 'grid', 'show')
 })
 
 const inputsTabFinish = tabFinish.querySelectorAll('input')
 let auxCheckerInputsTabFinish = [0]
+
+btnPrevFinish.addEventListener('click', () => {
+  hideShow(tabFinish, 'none')
+  hideShow(tabMoreOptions, 'grid', 'show')
+})
 
 function checkerInputsTabFinish() {
   if (
     auxCheckerInputsTabFinish.length == inputsTabFinish.length &&
     auxCheckerInputsTabFinish.every(field => field === true)
   ) {
-    btnSendEventForm.style.display = 'flex'
+    hideShow(btnSendEventForm, 'flex', 'show')
   } else {
-    btnSendEventForm.style.display = 'none'
+    hideShow(btnSendEventForm, 'none')
   }
 }
 
@@ -355,8 +356,6 @@ function initConstructEmail() {
   Informações de contato:
   ${recoverInfos(tabs[7])}
   `
-
-  console.log(mailBody)
   enviar(mailBody)
 }
 
@@ -376,4 +375,13 @@ function enviar(mailBody) {
     .then(response => response.json())
     .then(data => console.log(data))
     .catch(error => console.log(error))
+}
+
+function hideShow(item, displayType, action) {
+  if ((action = 'show')) {
+    item.style.display = displayType
+    item.classList.add('show')
+  } else if (displayType === 'none') {
+    item.classList.remove('show')
+  }
 }

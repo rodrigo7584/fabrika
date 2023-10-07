@@ -26,6 +26,19 @@
 .evento .tab {
   display: none;
 }
+.evento .show {
+  animation: show 0.5s forwards;
+}
+@keyframes show {
+  from {
+    opacity: 0;
+    transform: translate3d(-30px, 0, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
 .evento .boxes {
   padding: 5rem 0;
   display: flex;
@@ -122,10 +135,10 @@
   transform: rotate(-90deg);
 }
 .evento input,
-.evento textarea{
+.evento textarea {
   font-family: var(--pop);
   color: var(--blue-300);
-  border: 0.1rem solid var(--blue-300); 
+  border: 0.1rem solid var(--blue-300);
   font-weight: var(--font-medium);
   font-size: 1.5rem;
   background: var(--white);
@@ -135,10 +148,10 @@
   padding: 0.9rem 2rem;
 }
 .evento #tab-finish input,
-.evento #tab-finish textarea{
-width: 100%;
+.evento #tab-finish textarea {
+  width: 100%;
 }
-.evento #tab-finish textarea{
+.evento #tab-finish textarea {
   height: 15rem;
   border-radius: 2rem;
 }
@@ -158,7 +171,7 @@ width: 100%;
   background: var(--blue-300);
   color: var(--white);
 }
-.evento .btn-send-event-form{
+.evento .btn-send-event-form {
   display: none;
 }
 @media (max-width: 768px) {

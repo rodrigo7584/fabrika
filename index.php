@@ -342,7 +342,7 @@
               Voltar 
             </button> -->
             <div class="tabs">
-              <div class="tab" id="tab-gender">
+              <div class="tab tab-gender" id="tab-gender">
                 <div class="tab-container">
                    <h2>Planeje o seu evento</h2>
                   <h3>Para quem será a festa?</h3>
