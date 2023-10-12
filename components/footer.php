@@ -2,7 +2,7 @@
       <div class="container">
         <div class="row row-info">
           <div class="logo">
-            <img src="../img/logo.png" alt="">
+            <img src="./img/logo.png" alt="">
             <h4 class="highlight-text">Criamos momentos únicos de alegria e lazer</h4>
           </div>
           <nav>

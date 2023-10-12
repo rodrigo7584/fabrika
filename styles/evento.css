@@ -159,17 +159,24 @@
 .evento #tab-gender-female .btn-select {
   width: 15rem;
 }
+.evento #tab-where input {
+  width: 27rem;
+}
+.evento #tab-more-options .btn.btn-select {
+  width: 20rem;
+}
 /*BTN*/
 .evento .btn.btn-select {
   color: var(--blue-300);
   border: 0.1rem solid var(--blue-300);
   background: var(--white);
   font-weight: var(--font-medium);
-  font-size: 1.5rem;
+  font-size: 1.4em;
   width: 18rem;
   display: flex;
   justify-content: center;
   margin: 0;
+  height: auto;
 }
 .evento .btn.btn-select.selected {
   background: var(--blue-300);

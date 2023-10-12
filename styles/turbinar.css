@@ -1,17 +1,17 @@
-.turbinar{
+.turbinar {
   padding: 9rem 0;
-  background: url('../img/ballon-2.png'),url('../img/bg-blue-2.png');
+  background: url('../img/ballon-2.png'), url('../img/bg-blue-2.png');
   background-repeat: no-repeat;
   background-size: 20rem auto, cover;
   background-position: left center, top left;
 }
-.turbinar .title-simple{
+.turbinar .title-secondary {
   width: 90rem;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
 }
-.turbinar .subtitle{
+.turbinar .subtitle {
   font-family: var(--pop);
   font-weight: var(--font-semi-bold);
   text-align: center;
@@ -20,7 +20,7 @@
   width: 60rem;
   margin: 0 auto;
 }
-.turbinar .boxes{
+.turbinar .boxes {
   padding: 5rem 0;
   display: flex;
   flex-wrap: wrap;
@@ -29,10 +29,10 @@
   width: 80%;
   margin: 0 auto;
 }
-.turbinar .box{
+.turbinar .box {
   width: 18rem;
 }
-.turbinar .box .thumb{
+.turbinar .box .thumb {
   height: 10rem;
   width: 100%;
   border-radius: 1.5rem;
@@ -40,12 +40,12 @@
   overflow: hidden;
   margin-bottom: 1rem;
 }
-.turbinar .box .thumb img{
-width: 100% !important;
-height: 100% !important;
-object-fit: cover;
+.turbinar .box .thumb img {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover;
 }
-.turbinar .box .title-box{
+.turbinar .box .title-box {
   font-family: var(--ral);
   font-weight: var(--font-bold);
   text-align: center;
@@ -58,10 +58,10 @@ object-fit: cover;
   .turbinar {
     background-size: 13rem auto, cover;
   }
-  .turbinar .title-simple {
+  .turbinar .title-secondary {
     width: 100%;
   }
- }
+}
 @media (max-width: 768px) {
   .turbinar {
     background-size: 10rem auto, cover;
@@ -79,9 +79,8 @@ object-fit: cover;
   }
   .turbinar .box {
     width: 25rem;
-}
-.turbinar .box .thumb {
-  height: 13rem;
-}
-
+  }
+  .turbinar .box .thumb {
+    height: 13rem;
+  }
 }

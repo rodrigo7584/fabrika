@@ -20,6 +20,11 @@ document.addEventListener('scroll', function () {
 
 const swiperHeroIndex = new Swiper('.swiper-hero-index', {
   loop: true,
+
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true
+  },
   autoplay: {
     delay: 5000,
     disableOnInteraction: true

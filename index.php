@@ -4,35 +4,42 @@
       <div class="container-fluid">
         <div class="swiper swiper-hero-index">
           <div class="swiper-wrapper">
-            <div class="swiper-slide" style="background-image: url('./img/kids.png')">
-              <div class="container">
+            <div class="swiper-slide">
+              <div class="container-fluid">
                 <div class="row">
                   <div class="content">
-                    <h1>Garantimos a melhor experiência para aniversários e eventos infantis!</h1>
-                    <p>Contamos com profissionais especializados e prontos para te atender.</p>
+                    <h1 class="title-primary">Garantimos a melhor experiência para aniversários e eventos infantis!</h1>
+                    <p class="subtitle">Contamos com profissionais especializados e prontos para te atender.</p>
                     <a href="#" class="btn btn-orange">
                       <img src="./img/icon-whatsapp.png" alt="" />
                       Entre em contato
                     </a>
                   </div>
+                  <div class="thumb-slider">
+                    <img src="./img/kids-complete.png" alt="">
+                  </div>
                 </div>
               </div>
             </div>
-            <div class="swiper-slide" style="background-image: url('./img/kids.png')">
-              <div class="container">
+            <div class="swiper-slide">
+              <div class="container-fluid">
                 <div class="row">
                   <div class="content">
-                    <h1>Garantimos a melhor experiência para aniversários e eventos infantis!</h1>
-                    <p>Contamos com profissionais especializados e prontos para te atender.</p>
+                    <h1 class="title-primary">Garantimos a melhor experiência para aniversários e eventos infantis!</h1>
+                    <p class="subtitle">Contamos com profissionais especializados e prontos para te atender.</p>
                     <a href="#" class="btn btn-orange">
                       <img src="./img/icon-whatsapp.png" alt="" />
                       Entre em contato
                     </a>
+                  </div>
+                  <div class="thumb-slider">
+                    <img src="./img/kids-complete.png" alt="">
                   </div>
                 </div>
               </div>
             </div>
           </div>
+          <div class="swiper-pagination"></div>
         </div>
       </div>
     </section>
@@ -44,15 +51,16 @@
             <h2 class="title-bar">
             Tornamos seu evento <br> inesquecível
             </h2>
-            <p>
+            <p class="text-bold">
               Possuímos mais de 10 anos de experiência na área de recreação infantil, com uma
               visão diferenciada e inovadora.
             </p>
             <br />
-            <p>
+            <p class="text-bold">
               Para isso, contamos com uma equipe formada por profissionais qualificados em
               educação física, pedagogia, turismo e teatro
             </p>
+            <a href="#" class="btn btn-orange"> Nossa recreação infantil</a>
           </div>
           <div class="video">
             <img src="./img/thumb-video.png" alt="" />
@@ -63,7 +71,7 @@
     <section class="sobre">
       <div class="container">
         <div class="row">
-          <h2 class="title-simple">
+          <h2 class="title-secondary">
             Levamos <strong>alegria, lazer e satisfação</strong>
             aos nossos clientes, sempre!
           </h2>
@@ -74,7 +82,7 @@
               </div>
               <div class="content">
                 <h3 class="box-title">Aniversários e eventos infantis</h3>
-                <p>
+                <p class="text-thin">
                 Torne o dia especial de seu filho e sua filha ainda mais memorável com a Fábrica.
                 </p>
                 <a href="#" class="btn btn-orange"> Saiba Mais</a>
@@ -86,7 +94,7 @@
               </div>
               <div class="content">
                 <h3 class="box-title">Festas temáticas</h3>
-                <p>
+                <p class="text-thin">
                 Cada detalhe é cuidadosamente elaborado para criar um mundo de encanto e aventura
                 </p>
                 <a href="#" class="btn btn-orange"> Saiba Mais</a>
@@ -98,7 +106,7 @@
               </div>
               <div class="content">
                 <h3 class="box-title">Clubes, hotéis e empresas</h3>
-                <p>
+                <p class="text-thin">
                 Crie laços ainda mais fortes e celebre momentos preciosos por meio de nossos serviços.
                 </p>
                 <a href="#" class="btn btn-orange"> Saiba Mais</a>
@@ -110,7 +118,7 @@
               </div>
               <div class="content">
                 <h3 class="box-title">Aniversários e eventos infantis</h3>
-                <p>
+                <p class="text-thin">
                 Para todos que desejam oferecer experiências únicas e envolventes para as crianças.
                 </p>
                 <a href="#" class="btn btn-orange"> Saiba Mais</a>
@@ -129,9 +137,9 @@
               CONTE COM UMA EQUIPE <br />
               EXPERIENTE E DIVERTIDA
             </h2>
-            <p>Somos reconhecidos pelo nosso serviço e atendimento personalizado</p>
+            <p class="text-bold">Somos reconhecidos pelo nosso serviço e atendimento personalizado</p>
             <br />
-            <p>
+            <p class="text-bold">
               Atendemos a diversos tipos de festas e eventos infantis, abrangendo desde
               aniversários até festas familiares como batizados, casamentos ou churrascos. Além
               disso, oferecemos serviços de recreação infantil em ambientes corporativos, clubes e
@@ -145,21 +153,21 @@
                   <div class="swiper-group-content">
                     <img src="./img/icon-ballon-stars.png" alt="" class="icon" />
                     <strong>+7500</strong>
-                    <p>Eventos infantis realizados</p>
+                    <p class="text-thin">Eventos infantis realizados</p>
                   </div>
                 </div>
                 <div class="swiper-slide">
                   <div class="swiper-group-content">
                     <img src="./img/icon-ballon-stars.png" alt="" class="icon" />
                     <strong>+14</strong>
-                    <p>Clubes, hotéis e empresas atendidas</p>
+                    <p class="text-thin">Clubes, hotéis e empresas atendidas</p>
                   </div>
                 </div>
                 <div class="swiper-slide">
                   <div class="swiper-group-content">
                     <img src="./img/icon-ballon-stars.png" alt="" class="icon" />
                     <strong>+1,2 Mil</strong>
-                    <p> Crianças e pais felizes</p>
+                    <p class="text-thin"> Crianças e pais felizes</p>
                   </div>
                 </div>
               </div>
@@ -173,14 +181,14 @@
     <section class="diferenciais transition-after transition-light-blue">
       <div class="container">
         <div class="row">
-          <h2 class="title-simple">
+          <h2 class="title-secondary">
             CONFIRA <strong>NOSSOS DIFERENCIAIS</strong> QUE LEVAMOS PARA CADA EVENTO
           </h2>
           <div class="boxes">
             <div class="box">
               <img src="./img/icon-rounded-kids.png" alt="" class="icon" />
               <h3 class="title-box">100% personalizado</h3>
-              <p>
+              <p class="text-thin">
               Oferecemos um serviço completamente personalizado, garantindo uma experiência verdadeiramente 
               única e sob medida.
               </p>
@@ -188,7 +196,7 @@
             <div class="box">
               <img src="./img/icon-rounded-shield.png" alt="" class="icon" />
               <h3 class="title-box">Profissionais de pedagogia,educação física e teatro</h3>
-              <p>
+              <p class="text-thin">
               Como nossa equipe multidisciplinar estimulamos um desenvolvimento cognitivo, físico e criativo 
               de maneira excepcional.
               </p>
@@ -196,7 +204,7 @@
             <div class="box">
               <img src="./img/icon-rounded-confetti.png" alt="" class="icon" />
               <h3 class="title-box">Diversão garantida</h3>
-              <p>
+              <p class="text-thin">
               Transformamos momentos em experiências alegres e memoráveis,
               onde a imaginação ganha vida e cada sorriso é o nosso maior sucesso.
               </p>
@@ -208,7 +216,7 @@
     <section class="turbinar">
       <div class="container">
         <div class="row">
-          <h2 class="title-simple">
+          <h2 class="title-secondary">
             Saiba como você pode
             <strong>turbinar seu evento infantil</strong> com nossos serviços especiais:
           </h2>
@@ -301,13 +309,13 @@
             Receba um atendimento <br>
             personalizado
             </h2>
-            <p>
+            <p class="text-bold">
               Acreditamos que cada aniversário e evento infantil é único, com necessidades e
               expectativas específicas. Por isso, nosso compromisso é oferecer um atendimento sob
               medida, adaptado especialmente para cada cliente.
             </p>
             <br />
-            <p>
+            <p class="text-bold">
               Aqui, não medimos esforços para garantir que sua experiência seja a melhor possível.
               Entre em contato para sanar todas as dúvidas e receber um orçamento sem compromisso.
             </p>
@@ -324,8 +332,8 @@
       <div class="container">
         <div class="row">
           <div class="content">
-            <h2>Use nosso planejador interativo</h2>
-            <p>
+            <h2 class="title-primary">Use nosso planejador interativo</h2>
+            <p class="text-thin">
               Define os principais pontos do seu aniversário ou evento infantil junto à Fábrica
               Lúdica e já solicite um orçamento!
             </p>
@@ -344,8 +352,8 @@
             <div class="tabs">
               <div class="tab tab-gender" id="tab-gender">
                 <div class="tab-container">
-                   <h2>Planeje o seu evento</h2>
-                  <h3>Para quem será a festa?</h3>
+                   <h2 class="title-primary">Planeje o seu evento</h2>
+                   <h3 class="subtitle">Para quem será a festa?</h3>
                   <div class="boxes">
                     <div class="box">
                       <img src="./img/illustration-girl.png" alt="" class="icon-kid" />
@@ -367,7 +375,7 @@
                   <span>Voltar</span>
                 </button>
                 <div class="tab-container">
-                  <h2>Número de crianças convidadas</h2>
+                  <h2 class="title-primary">Número de crianças convidadas</h2>
                   <div class="boxes">
                     <div class="box">
                       <img src="./img/kids-group.png" alt="" class="icon-kids-group" />
@@ -391,8 +399,8 @@
                   <span>Voltar</span>
                 </button>
                 <div class="tab-container">
-                  <h2>Escolha a Faixa Etária</h2>
-                  <h3>Escolha a faixa etária dos convidados</h3>
+                  <h2 class="title-primary">Escolha a Faixa Etária</h2>
+                  <h3 class="subtitle">Escolha a faixa etária dos convidados</h3>
                   <div class="boxes">
                     <div class="box">
                       <img src="./img/male-baby.png" alt="" class="icon-kid-growing" />
@@ -426,8 +434,8 @@
                   <span>Voltar</span>
                 </button>
                 <div class="tab-container">
-                  <h2>Escolha a Faixa Etária</h2>
-                  <h3>Escolha a faixa etária dos convidados</h3>
+                  <h2 class="title-primary">Escolha a Faixa Etária</h2>
+                  <h3 class="subtitle">Escolha a faixa etária dos convidados</h3>
                   <div class="boxes">
                     <div class="box">
                       <img src="./img/female-baby.png" alt="" class="icon-kid-growing" />
@@ -461,7 +469,7 @@
                   <span>Voltar</span>
                 </button>
                 <div class="tab-container">
-                  <h2>Onde acontecerá o evento?</h2>
+                  <h2 class="title-primary">Onde acontecerá o evento?</h2>
                   <div class="boxes">
                     <div class="box">
                       <img src="./img/buildings-2.png" alt="" class="icon-city" />
@@ -479,7 +487,7 @@
                   <span>Voltar</span>
                 </button>
                 <div class="tab-container">
-                  <h2>Escolha o tema da sua festa</h2>
+                  <h2 class="title-primary">Escolha o tema da sua festa</h2>
                   <div class="boxes">
                     <div class="box">
                       <img src="./img/kids-group-2.png" alt="" class="icon-kids-group-2" />
@@ -508,8 +516,8 @@
                   <span>Voltar</span>
                 </button>
                 <div class="tab-container">
-                  <h2>Quer turbirnar a sua festa? </h2>
-                  <h3>Selecione uma ou mais opções abaixo:</h3>
+                  <h2 class="title-primary">Quer turbirnar a sua festa? </h2>
+                  <h3 class="subtitle">Selecione uma ou mais opções abaixo:</h3>
                   <div class="boxes">
                     <div class="box">
                       <img src="./img/kids-group-3.png" alt="" class="icon-kids-group-3" />
@@ -541,10 +549,10 @@
                   <span>Voltar</span>
                 </button>
                 <div class="tab-container"> 
-                  <h2>Informações para receber seu 
+                  <h2 class="title-primary">Informações para receber seu 
                     orçamento personalizado!
                   </h2>
-                  <h3> Retornaremos em até 24 horas, de segunda a sexta-feira. <br>
+                  <h3 class="subtitle"> Retornaremos em até 24 horas, de segunda a sexta-feira. <br>
                     O orçamento é completamente gratuito e não implica compromisso algum.
                   </h3>
                   <div class="boxes">
