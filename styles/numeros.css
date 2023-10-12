@@ -8,7 +8,6 @@
 .numeros .subtitle {
   text-align: center;
   color: var(--blue-300);
-  font-size: 1.3rem;
 }
 .numeros .boxes {
   padding: 5rem 0;

@@ -1,10 +1,10 @@
 .hero-about {
   padding: 10rem 0 5rem 0;
   background: var(--blue-300);
-  background-image: url('../img/light.png');
+  background-image: url('../img/icons-detail.png'), url('../img/light.png');
   background-repeat: no-repeat;
-  background-size: auto 100%;
-  background-position: left;
+  background-size: 8rem auto, auto 100%;
+  background-position: 1rem center, left center;
 }
 .hero-about .row {
   width: 100rem;
@@ -22,7 +22,7 @@
     width: 100%;
   }
 }
-@media (max-width: 576px) {
+@media (max-width: 768px) {
   .hero-about .row {
     grid-template-columns: 1fr;
   }

@@ -4,8 +4,8 @@
       <div class="container">
         <div class="row">
           <div class="content">
-            <h1>Conheça mais sobre nosso trabalho no mundo infantil</h1>
-            <p>
+            <h1 class="title-primary">Conheça mais sobre nosso trabalho no mundo infantil</h1>
+            <p class="subtitle">
               Tenha um atendimento 100% personalizado, com uma equipe especializada em recreação
               infantil
             </p>
@@ -27,26 +27,26 @@
             <img src="./img/group-2.png" alt="" />
           </div>
           <div class="content">
-            <h2>Sobre nós</h2>
-            <p>
+            <h2 class="title-bar">Sobre nós</h2>
+            <p class="text-bold">
               Contamos com mais de 18 anos de experiência no mercado, trabalhando com recreação
               infantil, com uma visão diferenciada e inovadora, buscando levar alegria, lazer e
               satisfação aos nossos clientes.
             </p>
             <br />
-            <p>
+            <p class="text-bold">
               Trabalhamos com todos os tipos de festas e eventos infantis - desde o aniversário
               infantil, festas familiares como batizados, casamentos ou churrascos, eventos
               corporativos para o público infantil até a recreação infantil em clubes, hotéis e
               escolas.
             </p>
             <br />
-            <p>
+            <p class="text-bold">
               Nossa equipe é composta por profissionais da área de educação física, pedagogia,
               turismo e teatro.
             </p>
             <br />
-            <p>
+            <p class="text-bold">
               Frequentemente, promovemos cursos e workshops para nossos profissionais para trazer
               novas tendências e garantir muita diversão em nossos atendimentos.
             </p>
@@ -61,7 +61,7 @@
           <div class="boxes">
             <div class="box">
               <h2 class="title-box">Nossa Missão</h2>
-              <p>
+              <p class="text-bold">
               Criamos momentos únicos de alegria e lazer para o nosso público, propondo
               jogos e brincadeiras de forma divertida, para que cada um possa fazer parte
               desta experiência inesquecível.
@@ -69,7 +69,7 @@
             </div>
             <div class="box">
               <h2 class="title-box">Nossa Visão</h2>
-              <p>
+              <p class="text-bold">
               Ser uma referência na área de recreação infantil e eventos para crianças e
               adolescentes, reconhecida pela inovação na criação de serviços e produtos,
               atendimento personalizado e resgate da interação e desenvolvimento pessoal
@@ -93,7 +93,7 @@
     <section class="numeros">
       <div class="container">
         <div class="row">
-          <h2>A Fabrica em números</h2>
+          <h2 class="title-primary">A Fabrica em números</h2>
           <h3 class="subtitle">Aproveite nossa experiência na área de recreação infantil</h3>
           <div class="boxes">
             <div class="box">
