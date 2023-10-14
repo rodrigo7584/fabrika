@@ -1,0 +1,318 @@
+/*
+Theme Name: Fábrica Lúdica
+Theme URI: https://waboo.com.br
+Author: Waboo Creative
+Author URI: https://waboo.com.br
+Description: Tema exclusivo para Fábrica lúdica.
+Tested up to: 6.3
+Version: 1.2
+License: GNU General Public License v2 or later
+License URI: https://www.gnu.org/licenses/old-licenses/gpl-2.0.html
+Text Domain: FabricaLudica
+Tags: Custom Theme. 
+*/
+
+/*
+IMPORTS CSS
+*/
+@import url('./styles/reset.css');
+@import url('./styles/header.css');
+@import url('./styles/footer.css');
+
+@import url('./styles/swiper-hero-index.css');
+@import url('./styles/garantia.css');
+@import url('./styles/sobre.css');
+@import url('./styles/equipe.css');
+@import url('./styles/diferenciais.css');
+@import url('./styles/turbinar.css');
+@import url('./styles/personalizado.css');
+@import url('./styles/planejador.css');
+@import url('./styles/evento.css');
+
+@import url('./styles/hero-about.css');
+@import url('./styles/sobre-nos.css');
+@import url('./styles/mvv.css');
+@import url('./styles/numeros.css');
+/*
+END IMPORTS CSS
+*/ /* 
+CSS VARIABLES 
+*/
+:root {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+
+  --white: #ffffff;
+  --gray: #f6f9fd;
+  --black: #000000;
+  --blue-300: #001741;
+  --blue-100: #586cb5;
+  --blue-200: #313243;
+  --orange: #f5a33d;
+
+  --pop: 'Poppins';
+  --ral: 'Raleway';
+
+  --font-thin: 100;
+  --font-extra-light: 200;
+  --font-light: 300;
+  --font-regular: 400;
+  --font-medium: 500;
+  --font-semi-bold: 600;
+  --font-bold: 700;
+  --font-extra-bold: 800;
+  --font-black: 900;
+}
+/*
+END CSS VARIABLES
+*/
+* {
+  box-sizing: border-box;
+}
+body {
+  position: relative;
+  font-family: var(--pop);
+  color: var(--white);
+}
+.title-primary {
+  font-family: var(--ral);
+  font-weight: var(--font-black);
+  font-size: 4rem;
+  line-height: 1.3;
+  margin-bottom: 0.5rem;
+}
+.title-bar {
+  font-family: var(--ral);
+  font-weight: var(--font-black);
+  position: relative;
+  color: var(--blue-100);
+  margin-top: 2.7rem;
+  margin-bottom: 2rem;
+  font-size: 3rem;
+}
+.title-bar::before {
+  position: absolute;
+  content: '';
+  width: 15rem;
+  height: 0.7rem;
+  top: -2rem;
+  background-color: var(--orange);
+}
+.title-secondary {
+  font-family: var(--ral);
+  font-weight: var(--font-medium);
+  color: var(--white);
+  line-height: 1.2;
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+  font-size: 3rem;
+}
+.title-secondary strong {
+  color: var(--orange);
+  font-weight: var(--font-bold);
+}
+.subtitle {
+  font-family: var(--pop);
+  font-weight: var(--font-semi-bold);
+  line-height: 1.5;
+  font-size: 1.6rem;
+}
+.text-bold {
+  font-family: var(--pop);
+  font-weight: var(--font-medium);
+  font-size: 1.5rem;
+  line-height: 1.5;
+  margin-bottom: 0.5rem;
+}
+.text-thin {
+  font-family: var(--pop);
+  font-weight: var(--font-light);
+  line-height: 1.5;
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+ul li {
+  font-family: var(--pop);
+  font-weight: var(--font-semi-bold);
+  font-size: 1.3rem;
+  line-height: 1.5;
+  margin-bottom: 0.5rem;
+}
+ul.red-list {
+  padding-left: 3rem;
+}
+ul.red-list li {
+  display: flex;
+  gap: 1rem;
+  color: var(--blue-300);
+  position: relative;
+}
+ul.red-list li::before {
+  content: '';
+  position: absolute;
+  left: -3rem;
+  top: 0rem;
+  background-image: url('./img/icon-check.png');
+  width: 2rem;
+  height: 2rem;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+a {
+  color: var(--white);
+  font-family: var(--pop);
+  font-weight: var(--font-bold);
+  font-size: 1.3rem;
+}
+a:hover {
+  filter: brightness(0.9);
+  transform: scale(0.98);
+}
+.container {
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+.container-fluid {
+  width: 100%;
+}
+.row {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  box-sizing: border-box;
+}
+.btn {
+  border-radius: 5rem;
+  padding: 0.7rem 2rem;
+  height: 3.6rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--pop);
+  color: var(--white);
+  text-align: center;
+  font-size: 1.5rem;
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  width: fit-content;
+  margin: 1rem 0;
+  cursor: pointer;
+}
+.btn-orange {
+  background: var(--orange);
+}
+.btn-blue {
+  border-radius: 5rem;
+  font-weight: var(--font-semi-bold);
+  background: var(--blue-300);
+  font-size: 1.8rem;
+}
+.transition-before,
+.transition-after {
+  position: relative;
+}
+.transition-before::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 5rem;
+  z-index: 5;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: bottom;
+  top: -4.9rem;
+  left: 0;
+}
+.transition-after::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 5rem;
+  z-index: 5;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: bottom;
+  bottom: -4.9rem;
+  left: 0;
+}
+.transition-before.transition-blue::before {
+  background-image: url('./img/transition-3.png');
+}
+.transition-before.transition-white::before {
+  background-image: url('./img/transition.png');
+}
+.transition-after.transition-light-blue::after {
+  background-image: url('./img/transition-2.png');
+}
+
+@media (max-width: 1400px) {
+  .container {
+    max-width: 1200px;
+  }
+}
+@media (max-width: 1200px) {
+  .container {
+    max-width: 992px;
+  }
+}
+@media (max-width: 992px) {
+  .container {
+    max-width: 768px;
+  }
+}
+@media (max-width: 768px) {
+  .container {
+    max-width: 576px;
+  }
+  h1 {
+    font-size: 3rem;
+  }
+  .title-secondary {
+    font-size: 2.5rem;
+  }
+  .transition-before::before {
+    height: 3rem;
+    top: -2.9rem;
+  }
+  .transition-after::after {
+    height: 3rem;
+    bottom: -2.9rem;
+  }
+}
+@media (max-width: 576px) {
+  .container {
+    max-width: 400px;
+  }
+  .transition-before::before {
+    height: 2rem;
+    top: -1.9rem;
+  }
+  .transition-after::after {
+    height: 2rem;
+    bottom: -1.9rem;
+  }
+}
+@media (max-width: 400px) {
+  .title-secondary {
+    font-size: 2rem;
+  }
+}
+/* 
+@media (max-width: 1400px) {
+
+}
+@media (max-width: 1200px) {
+
+ }
+@media (max-width: 992px) {
+
+ }
+@media (max-width: 768px) {
+
+}
+@media (max-width: 576px) {
+
+}
+@media (max-width: 400px) {
+} */

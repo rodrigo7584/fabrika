@@ -1,0 +1,59 @@
+.mvv {
+  position: relative;
+  padding: 8rem 0;
+  background-color: var(--blue-300);
+}
+.mvv .image-ballon {
+  position: absolute;
+  height: 15rem;
+  right: 3rem;
+  top: -7rem;
+  z-index: 8;
+}
+.mvv .image-plane {
+  position: absolute;
+  width: 10rem;
+  z-index: 8;
+  bottom: -3rem;
+  left: 3rem;
+}
+.mvv .boxes {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 5rem;
+}
+.mvv .box {
+  width: 30rem;
+  background: var(--white);
+  padding: 2rem;
+  border-radius: 2rem;
+}
+.mvv .box .title-box {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  font-weight: var(--font-black);
+  color: var(--blue-100);
+}
+.mvv .box p {
+  line-height: 1.3;
+  color: var(--blue-300);
+}
+.mvv .box:nth-child(even) {
+  background-color: var(--blue-300);
+  border: 0.2rem solid var(--white);
+}
+.mvv .box:nth-child(even) h2,
+.mvv .box:nth-child(even) p {
+  color: var(--white);
+}
+@media (max-width: 1200px) {
+  .mvv .boxes {
+    gap: 3rem;
+  }
+}
+@media (max-width: 768px) {
+  .mvv .box {
+    width: 100%;
+  }
+}

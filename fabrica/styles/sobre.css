@@ -1,0 +1,80 @@
+.sobre {
+  background-image: url('../img/bg-blue.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 6rem 0 12rem 0;
+}
+.sobre .title-secondary {
+  width: 60rem;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 5rem;
+  text-align: center;
+}
+.sobre .boxes {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+.sobre .box {
+  background: var(--white);
+  border-radius: 2rem;
+  overflow: hidden;
+  width: 22rem;
+}
+.sobre .box .thumb {
+  height: 15rem;
+  width: 100%;
+}
+.sobre .box .thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.sobre .box .content {
+  padding: 1.5rem;
+  height: calc(100% - 15rem);
+  display: grid;
+  grid-template-columns: 1fr;
+}
+.sobre .box .content .btn {
+  margin-bottom: 0;
+  margin-left: auto;
+  margin-right: auto;
+  align-self: flex-end;
+}
+.sobre .box .content .box-title {
+  font-family: var(--ral);
+  font-weight: var(--font-bold);
+  font-size: 1.8rem;
+  text-align: center;
+  line-height: 1.2;
+  color: var(--blue-300);
+  margin-bottom: 0.5rem;
+  align-self: flex-start;
+}
+.sobre .box .content p {
+  color: var(--blue-300);
+  font-weight: var(--font-light);
+  line-height: 1.5;
+  text-align: center;
+  align-self: flex-start;
+}
+
+@media (max-width: 992px) {
+  .sobre .box {
+    width: 24rem;
+  }
+}
+@media (max-width: 768px) {
+  .sobre .title-secondary {
+    width: 100%;
+  }
+}
+@media (max-width: 576px) {
+  .sobre .box {
+    width: 28rem;
+  }
+}

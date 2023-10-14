@@ -1,0 +1,86 @@
+.equipe {
+  position: relative;
+  padding: 8rem 0;
+}
+.equipe .image-plane {
+  position: absolute;
+  height: 10rem;
+  top: -3rem;
+  z-index: 5;
+  left: 5rem;
+}
+.equipe .row {
+  display: flex;
+  align-items: center;
+  gap: 20rem;
+  width: 70%;
+  margin: 0 auto;
+}
+.equipe .content p {
+  color: var(--blue-300);
+}
+.equipe .swiper-group {
+  position: relative;
+  width: 20rem;
+}
+.equipe .swiper-group .swiper-button-next,
+.equipe .swiper-group .swiper-button-prev {
+  width: 2rem;
+}
+.equipe .swiper-group .swiper-button-next:after,
+.equipe .swiper-group .swiper-button-prev:after {
+  font-size: 2rem;
+  font-weight: var(--font-black);
+  color: var(--blue-100);
+}
+.equipe .swiper-group .swiper-button-next {
+  right: -2rem;
+}
+.equipe .swiper-group .swiper-button-prev {
+  left: -2rem;
+}
+.equipe .swiper-group .swiper-group-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+.equipe .swiper-group .swiper-group-content .icon {
+  width: 8rem;
+}
+.equipe .swiper-group .swiper-group-content strong {
+  font-family: var(--pop);
+  font-weight: var(--font-bold);
+  font-size: 4rem;
+  color: var(--blue-300);
+}
+.equipe .swiper-group .swiper-group-content p {
+  text-align: center;
+  color: var(--blue-300);
+  font-weight: var(--font-light);
+  line-height: 1.5;
+}
+@media (max-width: 1200px) {
+  .equipe .row {
+    gap: 10rem;
+  }
+}
+@media (max-width: 992px) {
+  .equipe .row {
+    width: 90%;
+  }
+}
+@media (max-width: 768px) {
+  .equipe .row {
+    gap: 2rem;
+  }
+}
+@media (max-width: 576px) {
+  .equipe .image-plane {
+    height: 8rem;
+  }
+  .equipe .row {
+    flex-direction: column;
+    width: 100%;
+  }
+}

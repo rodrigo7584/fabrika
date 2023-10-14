@@ -1,0 +1,37 @@
+.numeros {
+  padding: 6rem 0;
+}
+.numeros h2 {
+  text-align: center;
+  color: var(--blue-100);
+}
+.numeros .subtitle {
+  text-align: center;
+  color: var(--blue-300);
+}
+.numeros .boxes {
+  padding: 5rem 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+.numeros .box {
+  width: 20rem;
+  border-radius: 1rem;
+  padding: 3rem;
+  background: var(--blue-300);
+}
+.numeros .box span {
+  font-family: var(--pop);
+  font-weight: var(--font-semi-bold);
+  font-size: 3rem;
+  display: block;
+  text-align: center;
+  color: var(--orange);
+  margin-bottom: 1rem;
+}
+.numeros .box p {
+  font-size: 1.6rem;
+  text-align: center;
+}
