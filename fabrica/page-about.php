@@ -1,4 +1,9 @@
-<?php include './components/header.php'?>
+<?php
+/*
+Template Name: Pagina Quem Somos
+Description: Template da pagina quem somos
+*/
+get_header();?>
   <main>
     <section class="hero-about">
       <div class="container">
@@ -10,12 +15,12 @@
               infantil
             </p>
             <a href="#" class="btn btn-orange">
-              <img src="./img/icon-whatsapp.png" alt="" />
+              <img src="<?php echo get_template_directory_uri(); ?>/img/icon-whatsapp.png" alt="" />
               Entre em contato
             </a>
           </div>
           <div class="image">
-            <img src="./img/illustration-kids.png" alt="" />
+            <img src="<?php echo get_template_directory_uri(); ?>/img/illustration-kids.png" alt="" />
           </div>
         </div>
       </div>
@@ -24,7 +29,7 @@
       <div class="container">
         <div class="row">
           <div class="image">
-            <img src="./img/group-2.png" alt="" />
+            <img src="<?php echo get_template_directory_uri(); ?>/img/group-2.png" alt="" />
           </div>
           <div class="content">
             <h2 class="title-bar">Sobre nós</h2>
@@ -55,7 +60,7 @@
       </div>
     </section>
     <section class="mvv">
-      <img src="./img/ballon.png" alt="" class="image-ballon" />
+      <img src="<?php echo get_template_directory_uri(); ?>/img/ballon.png" alt="" class="image-ballon" />
       <div class="container">
         <div class="row">
           <div class="boxes">
@@ -88,7 +93,7 @@
           </div>
         </div>
       </div>
-      <img src="./img/plane.png" alt="" class="image-plane" />
+      <img src="<?php echo get_template_directory_uri(); ?>/img/plane.png" alt="" class="image-plane" />
     </section>
     <section class="numeros">
       <div class="container">
@@ -113,4 +118,4 @@
       </div>
     </section>
   </main>
-<?php include './components/footer.php'?>
+<?php get_footer();?>

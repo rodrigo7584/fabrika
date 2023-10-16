@@ -2,7 +2,9 @@
       <div class="container">
         <div class="row row-info">
           <div class="logo">
-            <img src="./img/logo.png" alt="">
+            <a href="<?php echo home_url('/');?>">
+              <img src="<?php echo get_template_directory_uri(); ?>/img/logo.png" alt="">
+            </a>
             <h4 class="highlight-text">Criamos momentos únicos de alegria e lazer</h4>
           </div>
           <nav>
@@ -27,13 +29,13 @@
           <div class="contact-box">
             <div class="social">
               <a href="#" target="_blank">
-                <img src="./img/icon-facebook.png" alt="" />
+                <img src="<?php echo get_template_directory_uri(); ?>/img/icon-facebook.png" alt="" />
               </a>
               <a href="#" target="_blank">
-                <img src="./img/icon-instagram.png" alt="" />
+                <img src="<?php echo get_template_directory_uri(); ?>/img/icon-instagram.png" alt="" />
               </a>
               <a href="#" target="_blank">
-                <img src="./img/icon-tiktok.png" alt="" />
+                <img src="<?php echo get_template_directory_uri(); ?>/img/icon-tiktok.png" alt="" />
               </a>
             </div>
             <a href="#" class="btn btn-orange">Contato</a>

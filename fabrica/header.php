@@ -15,8 +15,8 @@
     <header class="menu">
       <div class="container">
         <div class="row">
-          <a href="./index.php" class="logo">
-            <img src="./img/logo.png" alt="logo of this site" />
+          <a href="<?php echo home_url('/');?>" class="logo">
+            <img src="<?php echo get_template_directory_uri(); ?>/img/logo.png" alt="logo of this site" />
           </a>
           <nav>
             <button class="btn-mobile-menu">
@@ -26,10 +26,10 @@
             </button>
             <ul>
               <li>
-                <a href="./index.php">Home</a>
+                <a href="<?php echo home_url('/');?>">Home</a>
               </li>
               <li>
-                <a href="./about.php">Quem Somos</a>
+                <a href="<?php echo home_url('quem-somos');?>">Quem Somos</a>
               </li>
               <li>
                 <a href="#">Recreação infantil</a>
