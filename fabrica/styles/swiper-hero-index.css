@@ -40,7 +40,7 @@
   object-fit: cover;
 }
 .swiper-hero-index .swiper-pagination {
-  bottom: 6rem;
+  bottom: 6rem!important;
 }
 .swiper-hero-index .swiper-pagination-bullet {
   background-color: var(--orange);

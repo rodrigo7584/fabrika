@@ -1,6 +1,6 @@
 <?php
 
-require get_template_directory_uri() . '/inc/customizer.php';
+require  get_template_directory() . '/inc/customizer.php';
 
 function fabrica_ludica_load_scripts(){
   wp_enqueue_style('fabrica-ludica-style',get_stylesheet_uri(), array(),filemtime(get_template_directory(). '/style.css'),'all');
